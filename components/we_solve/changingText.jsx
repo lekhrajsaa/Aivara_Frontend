@@ -29,11 +29,18 @@ const ChangingText = () => {
     }, []);
 
     return (
-        <div className={classes.paragraphContainer}>
-            <p className={classes.ChangingPara}>
-                We solve <Line style={{height: '72px'}}>complex</Line> water problems using cutting edge technologies for <ChangingWord text={currentWord} /> 
-            </p>
-        </div>
+      < div className={classes.section}>
+         <div className={classes.rightside_text}>
+          we generate data quality <br /> reports within 10 mins
+         </div>
+         <div className={classes.paragraphContainer}>
+          <p className={classes.ChangingPara}>
+            We solve <Line style={{ height: "72px" }}>complex</Line> water
+            problems using cutting edge technologies for{" "}
+            <ChangingWord text={currentWord} />
+          </p>
+         </div>
+       </div>
     );
 }
 

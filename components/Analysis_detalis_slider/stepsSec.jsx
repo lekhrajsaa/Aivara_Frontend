@@ -83,7 +83,7 @@ const StepsSec = () => {
             // })
             setTimeout(() => {
                 canScroll = true;
-            }, 800);
+            }, 100);
         }else if(e.deltaY > 0 && canScroll){
             canScroll = false;
             stepsSecElem.current.scrollBy(0,155)

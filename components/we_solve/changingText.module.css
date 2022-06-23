@@ -1,3 +1,15 @@
+.section{
+    width: 105%;
+    height:600px;
+ /* background: radial-gradient(50% 100.36% at 100% 0.68%, #FFDEFA 10%, rgba(255, 255, 255, 0) 100%)  */
+ background: radial-gradient(50% 40.36% at 100% 35.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%) 
+}
+.rightside_text{
+    position: absolute;
+    right:100px;
+   margin-bottom: 20px;
+    font-size: 15px;
+}
 .ChangingPara{
     font-family: 'sora', sans-serif;
     font-size: 50px;
@@ -5,6 +17,7 @@
     color: #A9A9A9;
     line-height: 85px;
     width: 884px;
+    
 }
 .changingWord{
     color: #3699FB;
