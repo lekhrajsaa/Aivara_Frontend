@@ -1,0 +1,25 @@
+.waveylineParent{
+    display: inline-block;
+    width: fit-content;
+    height: 100%;
+    position: relative;
+}
+.wavyline{
+    display: inline-block;
+    width: 100%;
+    /* height: 4%; */
+    height: 3px;
+    background: linear-gradient(118.65deg, #3699FB 6.89%, rgba(255, 172, 242, 0) 107.01%);
+    background-size: 200%;
+    background-position: 0;
+    position: absolute;
+    top: 105%;
+    left: 0px;
+    animation: wave 2s ease forwards infinite;
+}
+
+@keyframes wave {
+    0%{
+        background-position: 200%;
+    }
+}

@@ -1,0 +1,337 @@
+.content6 {
+  display: flex;
+  justify-content: space-between;
+}
+.first_bg_img {
+  /* margin: 50px 0; */
+  background-image: url("/waterdiagnosis.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.first_bg_img p {
+  margin: 0px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 70px;
+  font-family: "Sora", sans-serif;
+}
+.first_bg_img strong {
+  font-weight: 900;
+  font: bolder;
+}
+.first_bg_img_belowContent {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.first_bg_img_belowContent p {
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+.second_bg_img {
+  background-image: url("/publicbodies.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.homethree_heading {
+  /* text-align: center; */
+
+  width: 100%;
+}
+/* .homethree_heading h1 {
+  font-size: 50px;
+  justify-content: first baseline;
+} */
+.homethree_heading_h1 {
+  padding: 70px;
+}
+.homethree_heading_h1 h1 {
+  color: #979797;
+  font-size: 50px;
+  font-family: "Sora", sans-serif;
+}
+.headingstrong {
+  color: #3699fb;
+}
+.homethree_heading {
+  margin-top: 100px;
+}
+.business_cards {
+  width: 100%;
+  justify-content: center;
+}
+
+.box9 {
+  width: 920px;
+  height: 100px;
+  background-color: blue;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-right: 230px;
+}
+
+.form_area {
+  padding: 100px;
+}
+.form_area h1 {
+  font-family: "Raleway", sans-serif;
+  color: #3699fb;
+}
+.formsAndtextarea {
+  display: flex;
+  justify-content: space-between;
+}
+/* contact form */
+/* .form_wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.newsletter_signup-form-label {
+  font-size: 18px;
+  color: #bbcac6;
+  position: absolute;
+  bottom: 4px;
+  left: 2px;
+  transition: all ease-in-out 0.2s;
+}
+.newsletter_signup_form_label_shifted {
+  font-size: 13px;
+  color: #bbcac6;
+  transform: translateY(-30px);
+  transition: all ease-in-out 0.2s;
+  left: 4px;
+}
+.newsletter_signup_form_label_wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  margin: 0px 0px 40px;
+}
+.newsletter_signup_form_label_wrapper input[type="text"],
+.newsletter_signup_form_label_wrapper input[type="number"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 4px;
+  /* border-color: #3699fb; */
+  border-color: #8fb3d8;
+  width: 550px;
+}
+.newsletter_signup_form_label_wrapper input[type="text"]:focus,
+.newsletter_signup_form_label_wrapper input[type="number"]:focus {
+  outline: none;
+  /* border-bottom: 2px solid #bbcac6; */
+}
+.textareas textarea {
+  /* margin-top: 40px;
+  font-size: 18pt;
+  height: 180px;
+  width: 600px; */
+  border-color: #3699fb;
+}
+.textareas textarea:hover {
+  border-color: #3699fb;
+  font-family: "Sora", sans-serif;
+}
+.submit_btn {
+  padding: 12px 50px 12px 50px;
+  background-color: #b7d7f7;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Sora", sans-serif;
+}
+/* footer */
+.footerbody {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  /* justify-content: space-between;
+  align-items: center; */
+  background-color: #2d2c2c;
+
+  width: 100%;
+}
+
+.business_card {
+  padding: 20px;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* width: 61%; */
+}
+.btn_second {
+  width: 100%;
+  text-align: center;
+}
+.btn_second button {
+  margin-top: 10px;
+  padding: 13px 25px 13px 25px;
+  font-size: 15px;
+  background-color: #3699fb;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.water_problem_content {
+  width: 100%;
+  padding: 80px 70px 80px 75px;
+}
+.first_statment {
+  font-size: 70px;
+  color: #a9a9a9;
+  font-family: "Sora", sans-serif;
+  padding: 0px;
+}
+.bottomLine {
+  border: linear-gradient(
+    118.65deg,
+    #3699fb 6.89%,
+    rgba(255, 172, 242, 0) 107.01%
+  );
+  /* height: 16%;
+  width: 48%; */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  */
+}
+.water_problem_content strong {
+  color: #3699fb;
+}
+.second_statement {
+  font-size: 30px;
+  color: #a9a9a9;
+  font-family: "Sora", sans-serif;
+  margin-bottom: 40px;
+  margin-top: -100px;
+}
+.btn_third {
+  margin-top: 10px;
+  padding: 13px 25px 13px 25px;
+  font-size: 15px;
+  /* background-color: #3699fb; */
+  border: 2px solid #3699fb;
+  outline: none;
+  color: #3699fb;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+}
+.early_brackers {
+  width: 100%;
+  padding: 80px 70px 80px 75px;
+}
+.early_brackers h1 {
+  font-family: "Raleway", sans-serif;
+}
+/* .brackers_logos {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+} */
+/* .brackers_logos img {
+  height: 100px;
+} */
+
+@media (max-width: 768px) {
+  .content6 {
+    display: table;
+    justify-content: center;
+  }
+  .content6 img {
+    align-items: center;
+    width: auto;
+    height: 150px;
+  }
+  .first_bg_img,
+  .second_bg_img {
+    height: 40vh;
+  }
+}
+@media (max-width: 1400px) {
+  .first_bg_img,
+  .second_bg_img {
+    height: 40vh;
+  }
+  .first_bg_img h5 {
+    font-size: 35px;
+  }
+
+  .textareas textarea {
+    /* width: 500px; */
+    width: auto;
+  }
+}
+
+@media (max-width: 1395px) {
+  .newsletter_signup_form_label_wrapper input[type="text"],
+  .newsletter_signup_form_label_wrapper input[type="number"] {
+    width: 500px;
+  }
+  .textareas textarea {
+    width: 500px;
+    /* width: auto; */
+  }
+}
+@media (max-width: 1290px) {
+  .newsletter_signup_form_label_wrapper input[type="text"],
+  .newsletter_signup_form_label_wrapper input[type="number"] {
+    width: 400px;
+  }
+  .textareas textarea {
+    width: 400px;
+  }
+}
+@media (max-width: 1280px) {
+  .formsAndtextarea {
+    display: block;
+  }
+  .newsletter_signup_form_label_wrapper input[type="text"],
+  .newsletter_signup_form_label_wrapper input[type="number"] {
+    width: auto;
+  }
+  .textareas textarea {
+    min-width: 500px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 930px) {
+  .bottomLine {
+    width: 130% !important;
+    height: 3%;
+    padding-bottom: 2.5px;
+  }
+}
+@media screen and (min-width: 260px) and (max-width: 430px) {
+  .bottomLine {
+    width: 110% !important;
+    padding-bottom: 2.5px;
+  }
+}
+@media screen and (min-width: 430px) and (max-width: 750px) {
+  .bottomLine {
+    width: 100% !important;
+    height: 6%;
+    padding-bottom: 2.5px;
+  }
+}

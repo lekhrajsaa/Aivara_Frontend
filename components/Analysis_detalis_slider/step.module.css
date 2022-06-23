@@ -1,0 +1,21 @@
+.step{
+    position: relative;
+    top: 0px;
+    opacity: 0.2;
+    margin: 35px 0;
+}
+
+.countNum{
+    font-size: 70px;
+    font-weight: 600;
+    color: rgba(178, 204, 253, 0.6)
+}
+.stepInfo{
+    color: #395D89;
+    margin-top: 0;
+    font-weight: 400;
+}
+.highLight{
+    /* transform: scale(1.5); */
+    opacity: 1;
+}

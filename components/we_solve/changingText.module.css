@@ -1,0 +1,12 @@
+.ChangingPara{
+    font-family: 'sora', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    color: #A9A9A9;
+    line-height: 85px;
+    width: 884px;
+}
+.changingWord{
+    color: #3699FB;
+    transition: 0.5s ease;
+}

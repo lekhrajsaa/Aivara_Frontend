@@ -1,0 +1,138 @@
+.mission_and_vision{
+    display: flex;
+    flex-direction: column;
+    
+background: radial-gradient(50% 40.36% at 100% 36.68%, #FFDEFA 0%, rgba(255, 255, 255, 0) 100%) 
+}
+
+.heading_content1 {
+position:absolute;
+ width: 180px;
+ text-align: right;
+ right: 50px;
+ margin: 100px 50px ;
+}
+.heading_content1 p {
+position: relative;
+top: -15px;
+font-family: 'Sora';
+font-weight:bolder;
+line-height: 15px;
+font-size: 12px;
+}
+
+
+.body_container {
+  padding: 60px;
+  margin: 50px 0px;
+ 
+  
+}
+
+.heading_content2 h1 {
+  /* width: auto; */
+  color: #4e4e4e;
+  font-family: "Sora", sans-serif;
+  font-size: 40px;
+  font-weight:bolder;
+  font-weight: 900;
+}
+.heading_content2 p {
+  margin-top: -20px;
+  color: #797979;
+}
+.heading_content2 button {
+  margin-top: 10px;
+  width: 260px;
+  height: 50px;
+  padding: 13px 25px 13px 25px;
+  font-size: 15px;
+  background-color: #3699fb;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.heading_content4 {
+  display: flex;
+}
+
+
+.heading_content3 h1 {
+  color: #395d89;
+  font-family: "Sora", sans-serif;
+  font-size: 40px;
+  font: bold;
+}
+.heading_content3 p {
+  margin-top: -20px;
+  color: #395d89;
+  font-size: 20px;
+}
+.heading_content4 {
+  display: flex;
+  justify-content: flex-end;
+
+}
+.heading_content4 h1 {
+  color: #395d89;
+  font-family: "Sora", sans-serif;
+  font-size: 40px;
+  font: bold;
+}
+.heading_content4 p {
+  margin-top: -20px;
+  color: #395d89;
+  font-size: 20px;
+}
+
+ @media (max-width: 750px){
+.mission_and_vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading_content4 {
+  justify-content:flex-start;
+}
+
+.heading_content3{
+  justify-content: flex-start;
+   align-items: center;
+}
+.heading_content1{
+justify-content: center;
+left: 10%;
+}
+} 
+ @media (max-width: 430px){
+  .heading_content1{
+
+left: 0%;
+margin :50px  50px;
+ }
+ .heading_content3 h1,.heading_content4 h1{
+  font-size: 25px;
+ } 
+ .heading_content3 p,.heading_content4 p{
+  font-size: 15px;
+ }
+ .heading_content2 button {
+   width: 160px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+ }
+ .heading_content2 h1{
+  font-size: 20px;
+ }
+ } 
+ @media (max-width: 375px){
+   .heading_content2 h1{
+  font-size: 15px;
+ }
+}

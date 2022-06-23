@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Sora:wght@300&display=swap');
+
+.footer_body {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  background: #2d2c2c;
+  box-sizing: border-box;
+}
+.footer_main_body {
+  /* padding: 60px 70px 0px 70px; */
+  display: flex;
+  justify-content: space-around;
+  /* scale: 1; */
+  padding-top: 40px;
+}
+
+.section1{
+  width: 50%;
+  padding-left: 8%;
+}
+
+.info{
+  margin-top: 95px;
+  color: rgba(138, 138, 138, 1);
+  font-family: 'Raleway', sans-serif;
+  font-size: 34px;
+}
+
+.fuctionality{
+  color: #fff;
+  position: absolute;
+  bottom: 124px;
+  font-family: 'Sora', sans-serif;
+  font-size: 22px;
+}
+
+
+.fuctionality > div{
+  margin: 10px 0;  
+}
+
+.social{
+  position: absolute;
+  bottom: 64px;
+}
+.social > span{
+  margin-right: 10px;
+}
+
+
+
+.section2{
+  width: 50%;
+}
+
+.section2 > div > h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50px; */
+  margin: 0;
+  height: 100px;
+  font-family: 'Sora', sans-serif;
+  color: rgba(249, 249, 249, 1);
+  font-weight: 200;
+}
+
+.imageSection{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 50px;
+}
+
+.singleImage{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.singleImage > img {
+  width: 230;
+  height: 330;
+}
+.singleImage > h4 {
+  margin-bottom: 0;
+  color: rgba(54, 153, 251, 1);
+}
+.singleImage > p {
+  margin-top: 3px;
+  color: rgba(249, 249, 249, 1);
+}
+
+@media only screen and (max-width: 1040px) {
+  .info{
+    font-size: 30px;
+  }
+  .fuctionality{
+    bottom: 124px;
+
+    font-size: 18px;
+  }
+  .singleImage > img {
+    width: 200px;
+  }
+  .singleImage > h4{
+    font-size: small;
+  }
+  .singleImage > p {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .info{
+    font-size: 20px;
+  }
+  .fuctionality{
+
+    bottom: 110px;
+
+    font-size: 10px;
+  }
+  .singleImage > img {
+    width: 140px;
+  }
+  .singleImage > h4{
+    font-size: 10px;
+  }
+  .singleImage > p {
+    font-size: 8px;
+  }
+  .footer_main_body {
+    padding-top: 25px;
+  }
+  .imageSection{
+    margin-bottom: 30px;
+  }
+  .social{
+    bottom: 34px;
+  }
+  .fuctionality{
+    bottom: 94px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .singleImage > img {
+    width: 100px;
+  }
+  .section2 > div > h1{
+    font-size: 24px;   
+  }
+  .fuctionality{
+    bottom: 64px;
+  }
+  .info{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .singleImage > img {
+    width: 80px;
+  }
+  .section2 > div > h1{
+    font-size: 20px;   
+  }
+
+  .info{
+    font-size: 12px;
+  }
+  
+}
