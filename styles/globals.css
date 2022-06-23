@@ -16,3 +16,16 @@ a {
 * {
   box-sizing: border-box;
 }
+.swiper-slide {
+  opacity: 0.1;
+  transition: 0.4s ease;
+  transform: scale(0.9);
+}
+/* .swiper-slide:nth-child(2){
+  opacity: 0.2;
+} */
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}

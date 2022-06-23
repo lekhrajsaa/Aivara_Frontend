@@ -1,10 +1,8 @@
 .step{
     position: relative;
     top: 0px;
-    opacity: 0.2;
-    margin: 35px 0;
+    font-family: 'sora', sans-serif;
 }
-
 .countNum{
     font-size: 70px;
     font-weight: 600;

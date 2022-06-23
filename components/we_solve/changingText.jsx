@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Line from '../line_component/line';
 import classes from './changingText.module.css';
 import ChangingWord from './changingWord';
@@ -29,18 +29,17 @@ const ChangingText = () => {
     }, []);
 
     return (
-      < div className={classes.section}>
-         <div className={classes.rightside_text}>
-          we generate data quality <br /> reports within 10 mins
-         </div>
-         <div className={classes.paragraphContainer}>
-          <p className={classes.ChangingPara}>
-            We solve <Line style={{ height: "72px" }}>complex</Line> water
-            problems using cutting edge technologies for{" "}
-            <ChangingWord text={currentWord} />
-          </p>
-         </div>
-       </div>
+        < div className={classes.section}>
+            <div className={classes.rightside_text}>
+                we generate data quality <br /> reports within 10 mins
+            </div>
+            <div className={classes.paragraphContainer}>
+                <p className={classes.ChangingPara}>
+                    We solve <Line style={{ height: "72px" }}>complex</Line> water
+                    problems using cutting edge technologies <br /> for  <ChangingWord text={currentWord} />
+                </p>
+            </div>
+        </div>
     );
 }
 
