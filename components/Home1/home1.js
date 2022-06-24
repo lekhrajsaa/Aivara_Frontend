@@ -11,7 +11,7 @@ const Home1 = () => {
           <div className={styles.header_logo}>
             <h3>
            
-              <img src="/Frame.svg" />
+              <img src="/Frame1.png" />
             </h3>
 
             <h3 className={styles.header_log_title}>AIVARA</h3>
