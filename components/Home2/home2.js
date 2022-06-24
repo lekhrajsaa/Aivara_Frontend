@@ -92,7 +92,7 @@ const Home2 = () => {
          < ChangingText />
         </h5>
         <p className={classes.second_statement}>Discover more by experience</p>
-        <button className={classes.btn_third}>schedule demo</button>
+        <button className={classes.btn_third}>Schedule demo</button>
       </div>
       <div className={classes.early_brackers}>
         <h1>Early brackers</h1>

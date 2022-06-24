@@ -198,6 +198,7 @@
 .water_problem_content {
   width: 100%;
   padding: 80px 70px 80px 75px;
+  background: radial-gradient(50% 40.36% at 100% 35.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%) 
 }
 .first_statment {
   font-size: 70px;
@@ -228,7 +229,7 @@
 .btn_third {
   margin-top: 10px;
   padding: 13px 25px 13px 25px;
-  font-size: 15px;
+  font-size: 18px;
   /* background-color: #3699fb; */
   border: 2px solid #3699fb;
   outline: none;
