@@ -1,0 +1,24 @@
+
+.stepsSec{
+    width: 500px;
+    text-align: left;
+    margin: auto;
+    font-family: 'sora', sans-serif;
+    position: relative;
+    /* overflow: hidden; */
+}
+.stepsContainer{
+    position: relative;
+    top: 0;
+    transition: 0.3s ease;
+}
+
+.swiper-slide{
+    opacity: 0.2 ;
+    transition: 0.4s ease;
+    transform: scale(0.5);
+}
+.swiper-slide.swiper-slide-active{
+    /* transform: scale(1); */
+    opacity: 1;
+}

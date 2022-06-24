@@ -1,5 +1,6 @@
 import React from "react";
-import StepsSec from "../Analysis_detalis_slider/stepsSec";
+ import StepsSec from "../Analysis_details_slider2/stepsSec";
+// import StepsSec from "../Analysis_details_slider/stepsSec";
 import Line from "../line_component/line";
 import styles from "./analysisSteps.module.css";
 
@@ -14,7 +15,7 @@ const AnalysisSteps = () => {
       </div>
       <div className={styles.content2}>
         <div className={styles.content2_img}>
-          <img src="/laptop-image-with-analysis-report.png" />
+          <img src="/laptop-image-with-analysis-report-1.jpg" />
         </div>
         <div className={styles.list_content}>
           {/* <div>

@@ -12,6 +12,7 @@ import AnalysisSteps from "../components/analysisSteps/AnalysisSteps";
 import ScheduleDemo from "../components/schedule-demo/ScheduleDemo";
 import ChangingText from "../components/we_solve/changingText";
 import ChangingWord from "../components/we_solve/changingWord";
+import AnalysisRequestForm from "../components/Analysis-request-form/analysisRequestForm";
 export default function Home() {
   return (
     <>
@@ -25,13 +26,12 @@ export default function Home() {
       >
         <Home1 />
       </div>
-
- {/* <ChangingText /> */}
       <AnalysisSteps />
       <ScheduleDemo />
       <Home2 />
 
       <Footer />
+      <AnalysisRequestForm />
     </>
   );
 }
