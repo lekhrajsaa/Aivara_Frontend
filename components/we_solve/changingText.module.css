@@ -1,10 +1,4 @@
-.section{
-    width: 105%;
-    /* height:00px; */
-    height: auto;
- /* background: radial-gradient(50% 100.36% at 100% 0.68%, #FFDEFA 10%, rgba(255, 255, 255, 0) 100%)  */
- background: radial-gradient(50% 40.36% at 100% 35.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%) 
-}
+
 .rightside_text{
     position: absolute;
     right:100px;
