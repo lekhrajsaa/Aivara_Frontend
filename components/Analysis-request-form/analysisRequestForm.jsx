@@ -1,9 +1,37 @@
-import React from 'react'
+import React, {useState} from 'react'
 import classes from "./analysisRequestForm.module.css"
 import Country from "./countries"
 
 
 const analysisRequestForm = () => {
+
+  const [dropedFile, setDropedFile] = useState();
+  const [dragDropInputText, setDragDropInputText] = useState('Drag and drop file here');
+  const [dragDropInputStyles, setDragDropInputStyles] = useState({border: "1px dashed rgba(0, 0, 0, 0.5)"})
+  
+  const dragOverHandler = e => {
+    e.preventDefault()
+    console.log('dragged over file')
+
+    setDragDropInputText('Drop File +')
+    setDragDropInputStyles({
+      border: "1px dashed black",
+      background: "white",
+      color: "black"
+    })
+  }
+  const dragDropHandler = e => {
+    e.preventDefault()
+    const file = e.dataTransfer.files[0];
+    setDropedFile(file)
+  }
+  const dragLeaveHandler = e => {    
+    setDragDropInputText('Drag and drop file here')
+    setDragDropInputStyles({
+      border: "1px dashed rgba(0, 0, 0, 0.5)"
+    })
+  }
+
   return (
     <div className={classes.analysisReqestForm_Page}>
       <div className={classes.analysisRequestDetails}>
@@ -71,10 +99,10 @@ const analysisRequestForm = () => {
               required
             />
             <label htmlFor="country" placeholder='Select your country'>Country</label>
-           <Country />
+            <Country />
             <label htmlFor="application">Application</label>
             <select name='application' id='application' required>
-              <option value="" selected></option>
+              <option value=""></option>
               <option value="Application1" style={{ fontSize: "15px" }}>
                 Application1
               </option>
@@ -83,20 +111,32 @@ const analysisRequestForm = () => {
               </option>
             </select>
             <label htmlFor="attachments">Attachments</label>
-            <input
+            <label
               className={classes.file_upload}
-              type="file"
-              for="attachments"
-              id="attachments"
-              accept="image/*"
-              placeholder="Drag and Drop files here"
-              required
-            />
+              onDrop={dragDropHandler}
+              onDragOver={dragOverHandler}
+              onDragLeave={dragLeaveHandler}
+
+              style={dragDropInputStyles}
+
+            >
+              { dragDropInputText }
+              <input
+
+                className={classes.file_upload_input}
+                type="file"
+                for="attachments"
+                id="attachments"
+                accept="image/*"
+                placeholder="Drag and Drop files here"
+                required
+              />
+            </label>
             <label htmlFor="analysisGoal">
               Sample Description/Analysis Goal
             </label>
             <input type="text" for="analysisGoal" id="analysisGoal" required />
-            <button type="submit"> Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>

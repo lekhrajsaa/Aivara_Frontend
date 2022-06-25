@@ -96,12 +96,12 @@ const Home2 = () => {
       </div>
       <div className={classes.early_brackers}>
         <h1>Early brackers</h1>
-        {/* <div className={classes.brackers_logos}> */}
-        <img src="/Rectangle71.png" alt="pic" />
-        <img src="/clogo2.png" alt="pic" />
-        <img src="/clogo3.png" alt="pic" />
-        <img src="/clogo4.png" alt="pic" />
-        {/* </div> */}
+        <div className={classes.brackers_logos}>
+          <img src="/Rectangle71.png" alt="pic" />
+          <img src="/clogo2.png" alt="pic" />
+          <img src="/clogo3.png" alt="pic" />
+          <img src="/clogo4.png" alt="pic" />
+        </div>
       </div>
 
       <div className={classes.form_area}>
