@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from "./countries.module.css"
+
 const Allcountries = [
   { name: "", code: "" },
   { name: "Afghanistan", code: "AF" },
@@ -247,14 +248,19 @@ const Allcountries = [
   { name: "Zimbabwe", code: "ZW" },
 ];
 
-const countries = () => {
+const countries = ({ country, setCountry }) => {
+
+  const selectHandler = e => {
+    console.log(e.target.value)
+    setCountry(e.target.value)
+  }
   return (
-    <select name="country" id="country" required className={classes.selected}>
-            {Allcountries.map((country)=>{
-              const{name, code}=country;
-              return <option value="`${name}`" className={classes.options}>{name}</option>;
-            })}
-            </select>
+    <select onChange={selectHandler} name="country" id="country" required className={classes.selected}>
+      {Allcountries.map((country) => {
+        const { name, code } = country;
+        return <option key={code} value={`${name}`} className={classes.options}>{name}</option>
+      })}
+    </select>
   )
 }
 

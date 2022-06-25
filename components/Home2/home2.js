@@ -4,6 +4,7 @@ import classes from "./home2.module.css";
 // import Footer from "../Footer/Footer";
 import Cards from "../BusinessCard/Cards";
 import ChangingText from "../we_solve/changingText";
+import Contactus from "./contactus_form/contactus";
 const carddata = [
   {
     id: 1,
@@ -37,6 +38,8 @@ const carddata = [
 ];
 
 const Home2 = () => {
+
+
   return (
     <>
       {/* <div className={classes.first_bg_img}>
@@ -75,11 +78,9 @@ const Home2 = () => {
 
         <div className={classes.business_card}>
           {carddata.map((item) => {
-            const { image, context } = item;
+            const { image, context, id } = item;
             return (
-              <>
-                <Cards imgsrc={image} info={context} />
-              </>
+              <Cards key={id} imgsrc={image} info={context} />
             );
           })}
         </div>
@@ -106,91 +107,7 @@ const Home2 = () => {
 
       <div className={classes.form_area}>
         <h1>Get in touch with us</h1>
-        <form>
-          <div className={classes.formsAndtextarea}>
-            <div className={classes.form_wrapper}>
-             
-                {/* newsletter-signup-form-label form-label */}
-                <div className={classes.newsletter_signup_form_label_wrapper}>
-                  <input
-                    class="form-input"
-                    type="text"
-                    name="email"
-                    id="email"
-                    required
-                  />
-                  <label
-                    className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
-                    for="company_name"
-                    id="company_name"
-                  >
-                    Company name
-                  </label>
-                </div>
-                <div className={classes.newsletter_signup_form_label_wrapper}>
-                  <input
-                    class="form-input"
-                    type="text"
-                    name="email"
-                    id="email"
-                    required
-                  />
-                  <label
-                    className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
-                    for="company_email"
-                    id="company_email"
-                   
-                  >
-                    Company email
-                  </label>
-                </div>
-                <div className={classes.newsletter_signup_form_label_wrapper}>
-                  <input
-                    class="form-input"
-                    type="tel"
-                    name="contact_number"
-                    id="contact_number"
-                    required
-                  />
-                  <label
-                    className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
-                    for="contact_number"
-                    id="contact_number"
-                  >
-                    Contact number
-                  </label>
-                </div>
-           
-            </div>
-
-            <div className={classes.textareas}>
-              {/* <textarea
-              placeholder="Message"
-              rows="30"
-              data-min-rows="30"
-            ></textarea> */}
-              <div className={classes.newsletter_signup_form_label_wrapper}>
-                <input
-                  class="form-input"
-                  type="text"
-                  name="message"
-                  id="message"
-                  required
-                />
-                <label
-                  className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
-                  for="message"
-                  id="message"
-                >
-                  Message
-                </label>
-              </div>
-            </div>
-          </div>
-          <button className={classes.submit_btn} type="submit">
-            Submit
-          </button>
-        </form>
+          <Contactus />
       </div>
 
       {/* <Footer /> */}

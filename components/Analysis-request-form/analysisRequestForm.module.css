@@ -1,47 +1,3 @@
-.analysisReqestForm_Page {
-    display: flex;
-    flex-direction: row;
-    /* width: 100%; */
-    /* height:auto; */
-    /* margin: 100px 0px; */
-    padding: 84px 0;
-    background: radial-gradient(31.42% 69.88% at 9.1% 18.95%, rgba(54, 153, 251, 0.2) 0%, rgba(249, 249, 249, 0.2) 100%), #F9F9F9;
-}
-
-.analysisRequestDetails {
-    width: 70%;
-}
-
-.analysisRequestDetails p {
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 38px;
-    padding: 0px 90px;
-}
-
-
-.analysis_Details p {
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 33px;
-    margin: 90px 0px;
-}
-
-.analysisRequestForm p {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 38px;
-    margin-top: 0;
-}
-
 .formFields {
     display: flex;
     flex-direction: column;
@@ -54,6 +10,7 @@
     background: #F3F3F3;
     font-size: 12px;
     border-radius: 1.36597px;
+    padding: 0 15px;
 }
 
 .formFields select {
@@ -63,6 +20,7 @@
     background: #F3F3F3;
     font-size: 12px;
     border-radius: 1.36597px;
+    padding: 0 15px;
 }
 .formFields label{
     margin-top: 15px;

@@ -12,7 +12,8 @@ import AnalysisSteps from "../components/analysisSteps/AnalysisSteps";
 import ScheduleDemo from "../components/schedule-demo/ScheduleDemo";
 import ChangingText from "../components/we_solve/changingText";
 import ChangingWord from "../components/we_solve/changingWord";
-import AnalysisRequestForm from "../components/Analysis-request-form/analysisRequestForm";
+import AnalysisRequestFormPage from "../components/Analysis-request-form/analysisRequestFormPage";
+
 export default function Home() {
   return (
     <>
@@ -31,7 +32,7 @@ export default function Home() {
       <Home2 />
 
       <Footer />
-      <AnalysisRequestForm />
+      <AnalysisRequestFormPage />
     </>
   );
 }
