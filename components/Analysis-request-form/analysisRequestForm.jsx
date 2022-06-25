@@ -107,67 +107,122 @@ const AnalysisRequestForm = () => {
     }
     
     return (
-        <form onSubmit={AnalysisRequestFormSubmitHandler} className={classes.formFields}>
-            <label htmlFor="firstName">First Name</label>
-            <input type="text" id="firstName" minLength="3" required value={firstName} onInput={firstNameInpChangeHandler} />
+      <form
+        onSubmit={AnalysisRequestFormSubmitHandler}
+        className={classes.formFields}
+      >
+        <label htmlFor="firstName">First Name</label>
+        <input
+          type="text"
+          id="firstName"
+          minLength="3"
+          required
+          value={firstName}
+          onInput={firstNameInpChangeHandler}
+        />
 
-            <label htmlFor="lastName">Last Name</label>
-            <input type="text" id="lastName" minLength="3" required value={lastName} onInput={lastNameInpChangeHandler} />
+        <label htmlFor="lastName">Last Name</label>
+        <input
+          type="text"
+          id="lastName"
+          minLength="3"
+          required
+          value={lastName}
+          onInput={lastNameInpChangeHandler}
+        />
 
-            <label htmlFor="jobTitle">Job Title</label>
-            <input type="text" id="jobTitle" required value={jobTitle} onInput={jobTitleInpChangeHandler} />
+        <label htmlFor="jobTitle">Job Title</label>
+        <input
+          type="text"
+          id="jobTitle"
+          required
+          value={jobTitle}
+          onInput={jobTitleInpChangeHandler}
+        />
 
-            <label htmlFor="companyName">Company Name</label>
-            <input type="text" id="companyName" minLength="3" required value={companyName} onInput={companyNameInpChangeHandler} />
-            
-            <label htmlFor="emailAddress">Email Address</label>
-            <input type="email" id="emailAddress" required value={emailAddress} onInput={emailAddressInpChangeHandler} />
+        <label htmlFor="companyName">Company Name</label>
+        <input
+          type="text"
+          id="companyName"
+          minLength="3"
+          required
+          value={companyName}
+          onInput={companyNameInpChangeHandler}
+        />
 
-            <label htmlFor="contactNo">Contact Number</label>
-            <input type="tel" id="contactNo" minLength="10" maxLength="10" required value={contactNumber} onInput={contactNumberChangeHandler} />
+        <label htmlFor="emailAddress">Email Address</label>
+        <input
+          type="email"
+          id="emailAddress"
+          required
+          value={emailAddress}
+          onInput={emailAddressInpChangeHandler}
+        />
 
-            <label htmlFor="country" placeholder='Select your country'>Country</label>
-            <Country country={country} setCountry={setCountry} />
+        <label htmlFor="contactNo">Contact Number</label>
+        <input
+          type="tel"
+          id="contactNo"
+          minLength="10"
+          maxLength="10"
+          required
+          value={contactNumber}
+          onInput={contactNumberChangeHandler}
+        />
 
-            <label htmlFor="application">Application</label>
-            <select name='application' id='application' required onChange={selectApplicationChangeHandler}>
-                <option value=""></option>
-                <option value="Application1" style={{ fontSize: "15px" }}>
-                    Application1
-                </option>
-                <option value="Application2" style={{ fontSize: "15px" }}>
-                    Application1
-                </option>
-            </select>
+        <label htmlFor="country" placeholder="Select your country">
+          Country
+        </label>
+        <Country country={country} setCountry={setCountry} />
 
-            <label htmlFor="attachments">Attachments</label>
-            <label
-                className={classes.file_upload}
-                onDrop={dragDropHandler}
-                onDragOver={dragOverHandler}
-                onDragLeave={dragLeaveHandler}
+        <label htmlFor="application">Application</label>
+        <select
+          name="application"
+          id="application"
+          required
+          onChange={selectApplicationChangeHandler}
+        >
+          <option value=""></option>
+          <option value="Application1" style={{ fontSize: "15px" }}>
+            Application1
+          </option>
+          <option value="Application2" style={{ fontSize: "15px" }}>
+            Application1
+          </option>
+        </select>
 
-                style={dragDropInputStyles}
-            >
-                {dragDropInputText}
-                <input
-                    className={classes.file_upload_input}
-                    type="file"
-                    htmlFor="attachments"
-                    id="attachments"
-                    accept="image/*"
-                    required
-                    onChange={attachmentInpChangeHanlder}
-                    multiple
-
-                />
-            </label>
-            <label htmlFor="analysisGoal">
-                Sample Description/Analysis Goal
-            </label>
-            <input value={analysisGoal} type="text" htmlFor="analysisGoal" id="analysisGoal" required  onInput={analysisGoalChangeHanlder}/>
-            <button type="submit">Submit</button>
-        </form>
+        <label htmlFor="attachments">Attachments</label>
+        <label
+          className={classes.file_upload}
+          onDrop={dragDropHandler}
+          onDragOver={dragOverHandler}
+          onDragLeave={dragLeaveHandler}
+          style={dragDropInputStyles}
+        >
+          {dragDropInputText}
+          <input
+            className={classes.file_upload_input}
+            type="file"
+            htmlFor="attachments"
+            id="attachments"
+            accept="image/jpeg,image/gif,image/png,application/pdf,application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
+text/plain,image/x-eps"
+            required
+            onChange={attachmentInpChangeHanlder}
+            multiple
+          />
+        </label>
+        <label htmlFor="analysisGoal">Sample Description/Analysis Goal</label>
+        <input
+          value={analysisGoal}
+          type="text"
+          htmlFor="analysisGoal"
+          id="analysisGoal"
+          required
+          onInput={analysisGoalChangeHanlder}
+        />
+        <button type="submit">Submit</button>
+      </form>
     );
 }
 
