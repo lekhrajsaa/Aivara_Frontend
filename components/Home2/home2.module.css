@@ -245,6 +245,9 @@
 .early_brackers h1 {
   font-family: "Raleway", sans-serif;
 }
+.braker_Logos{
+  margin: 0 10px;
+}
 /* .brackers_logos {
   width: 50%;
   display: flex;

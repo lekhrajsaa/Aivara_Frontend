@@ -78,7 +78,7 @@ const Home2 = () => {
             const { image, context } = item;
             return (
               <>
-                <Cards imgsrc={image} info={context}  />
+                <Cards imgsrc={image} info={context} />
               </>
             );
           })}
@@ -89,19 +89,19 @@ const Home2 = () => {
       </div>
       <div className={classes.water_problem_content}>
         <h5 className={classes.first_statment}>
-         < ChangingText />
+          <ChangingText />
         </h5>
         <p className={classes.second_statement}>Discover more by experience</p>
         <button className={classes.btn_third}>Schedule demo</button>
       </div>
       <div className={classes.early_brackers}>
         <h1>Early brackers</h1>
-        {/* <div className={classes.brackers_logos}> */}
-        <img src="/Rectangle71.png" alt="pic" />
-        <img src="/clogo2.png" alt="pic" />
-        <img src="/clogo3.png" alt="pic" />
-        <img src="/clogo4.png" alt="pic" />
-        {/* </div> */}
+        <div className={classes.brackers_logos}>
+          <img src="/Rectangle71.png" alt="pic" />
+          <img src="/clogo2.png" alt="pic" />
+          <img src="/clogo3.png" alt="pic" />
+          <img src="/clogo4.png" alt="pic" />
+        </div>
       </div>
 
       <div className={classes.form_area}>
