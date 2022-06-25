@@ -1,5 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
+// import Head from "next/head";
+// import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Home1 from "../components/Home1/home1";
 import Home2 from "../components/Home2/home2";
@@ -7,7 +7,7 @@ import Footer from "../components/Footer/Footer";
 
 // import Cards from "../components/BusinessCard/Cards";
  
-// import MissionAndVision from "../components/Mission-and-Vision/MissionAndVision";
+//  import MissionAndVision from "../components/Mission-and-Vision/MissionAndVision";
 import AnalysisSteps from "../components/analysisSteps/AnalysisSteps";
 import ScheduleDemo from "../components/schedule-demo/ScheduleDemo";
 import ChangingText from "../components/we_solve/changingText";
