@@ -5,6 +5,7 @@ import classes from "./home2.module.css";
 import Cards from "../BusinessCard/Cards";
 import ChangingText from "../we_solve/changingText";
 import Contactus from "./contactus_form/contactus";
+
 const carddata = [
   {
     id: 1,
@@ -37,8 +38,11 @@ const carddata = [
   },
 ];
 
-const Home2 = () => {
+const Home2 = ({setPopUpOn}) => {
 
+  function scheduleDemoBtnClickHanlder(){
+    setPopUpOn(true)
+  }
 
   return (
     <>
@@ -93,8 +97,9 @@ const Home2 = () => {
           <ChangingText />
         </h5>
         <p className={classes.second_statement}>Discover more by experience</p>
-        <button className={classes.btn_third}>Schedule demo</button>
+        <button onClick={scheduleDemoBtnClickHanlder} className={classes.btn_third}>Schedule demo</button>
       </div>
+
       <div className={classes.early_brackers}>
         <h1>Early brackers</h1>
         <div className={classes.brackers_logos}>

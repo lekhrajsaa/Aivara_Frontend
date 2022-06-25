@@ -2,10 +2,14 @@ import React from 'react'
 import AnalysisRequestForm from './analysisRequestForm';
 import classes from "./analysisRequestFormPage.module.css"
 
-const analysisRequestFormPage = () => {
+const analysisRequestFormPage = ({setPopUpOn}) => {
+  function backButtonClickHandler(){
+    setPopUpOn(false);
+  }
 
   return (
     <div className={classes.analysisReqestForm_Page}>
+      <button onClick={backButtonClickHandler} className={classes.backButton}>⇐</button>
       <div className={classes.analysisRequestDetails}>
         <p>Want to know if Aivara can help you?</p>
         <div className={classes.analysis_Details}>

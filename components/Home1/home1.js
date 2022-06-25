@@ -3,7 +3,12 @@ import styles from "./home1.module.css";
 import classes from "./homeTitle.module.css";
 import Home2 from "../Home2/home2";
 import Footer from "../Footer/Footer";
-const Home1 = () => {
+const Home1 = ({setPopUpOn}) => {
+
+  function scheduleDemoClickHanlder (){
+    setPopUpOn(true)
+  }
+
   return (
     <>
       <div>
@@ -27,7 +32,7 @@ const Home1 = () => {
               simplified
             </h1>
             <p>We use AI to detect upto 20 parameter in 10 min.</p>
-            <button>Schedule demo</button>
+            <button onClick={scheduleDemoClickHanlder}>Schedule demo</button>
           </div>
         </div>
         <div className={ styles.visionAndMission}>

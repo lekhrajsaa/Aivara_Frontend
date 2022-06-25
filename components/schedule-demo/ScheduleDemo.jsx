@@ -1,6 +1,11 @@
 import React from 'react'
 import styles from './scheduleDemo.module.css' 
-const ScheduleDemo = () => {
+const ScheduleDemo = ({setPopUpOn}) => {
+
+  function scheduleDemoClickHanlder(){
+    setPopUpOn(true);
+  }
+  
   return (
     <div className={styles.demo_container}>
       <div className={styles.container_heading}>
@@ -10,7 +15,7 @@ const ScheduleDemo = () => {
           <br /> <strong>parameters</strong>
         </p>
 
-        <button>Schedule demo</button>
+        <button onClick={scheduleDemoClickHanlder}>Schedule demo</button>
       </div>
     </div>
   );

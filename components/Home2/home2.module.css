@@ -123,6 +123,7 @@
   margin: 0px 0px 40px;
 }
 .newsletter_signup_form_label_wrapper input[type="text"],
+.newsletter_signup_form_label_wrapper input[type="email"],
 .newsletter_signup_form_label_wrapper input[type="tel"],
 .newsletter_signup_form_label_wrapper input[type="number"] {
   border-top: none;
@@ -134,6 +135,7 @@
   width: 550px;
 }
 .newsletter_signup_form_label_wrapper input[type="text"]:focus,
+.newsletter_signup_form_label_wrapper input[type="email"],
 .newsletter_signup_form_label_wrapper input[type="tel"],
 .newsletter_signup_form_label_wrapper input[type="number"]:focus {
   outline: none;
@@ -293,6 +295,7 @@
 
 @media (max-width: 1395px) {
   .newsletter_signup_form_label_wrapper input[type="text"],
+  .newsletter_signup_form_label_wrapper input[type="email"],
   .newsletter_signup_form_label_wrapper input[type="number"] {
     width: 500px;
   }
@@ -303,6 +306,7 @@
 }
 @media (max-width: 1290px) {
   .newsletter_signup_form_label_wrapper input[type="text"],
+  .newsletter_signup_form_label_wrapper input[type="email"],
   .newsletter_signup_form_label_wrapper input[type="number"] {
     width: 400px;
   }
@@ -315,6 +319,7 @@
     display: block;
   }
   .newsletter_signup_form_label_wrapper input[type="text"],
+  .newsletter_signup_form_label_wrapper input[type="email"],
   .newsletter_signup_form_label_wrapper input[type="number"] {
     width: auto;
   }
