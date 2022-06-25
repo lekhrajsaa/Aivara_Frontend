@@ -1,8 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900);
-.container {
-  padding: 50px;
-}
+
 
 
 
@@ -24,6 +22,13 @@
 .header_log_title {
   font-family: "Sora", sans-serif;
   font-size: 32px;
+  padding-left: 10px;
+  margin-top: 30px;
+  color: #4e4e4e;
+}
+.heading_content1 p{
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
   margin-left: 10px;
   margin-top: 30px;
   color: #4e4e4e;
@@ -37,7 +42,7 @@
 }
 .body_container2{
 
-width: 105%;
+width: 100%;
  padding: 100px;
 
  background: radial-gradient(50% 40.36% at 90% 40.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%) 
