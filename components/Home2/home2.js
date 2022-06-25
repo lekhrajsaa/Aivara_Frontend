@@ -75,10 +75,10 @@ const Home2 = () => {
 
         <div className={classes.business_card}>
           {carddata.map((item) => {
-            const { image, context } = item;
+            const { image, context,id} = item;
             return (
               <>
-                <Cards imgsrc={image} info={context} />
+                <Cards imgsrc={image} info={context} key={id} />
               </>
             );
           })}
@@ -113,7 +113,7 @@ const Home2 = () => {
                 {/* newsletter-signup-form-label form-label */}
                 <div className={classes.newsletter_signup_form_label_wrapper}>
                   <input
-                    class="form-input"
+                    className="form-input"
                     type="text"
                     name="email"
                     id="email"
@@ -121,7 +121,7 @@ const Home2 = () => {
                   />
                   <label
                     className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
-                    for="company_name"
+                    htmlFor="company_name"
                     id="company_name"
                   >
                     Company name
@@ -129,7 +129,7 @@ const Home2 = () => {
                 </div>
                 <div className={classes.newsletter_signup_form_label_wrapper}>
                   <input
-                    class="form-input"
+                    className="form-input"
                     type="text"
                     name="email"
                     id="email"
@@ -137,7 +137,7 @@ const Home2 = () => {
                   />
                   <label
                     className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
-                    for="company_email"
+                    htmlFor="company_email"
                     id="company_email"
                    
                   >
@@ -146,7 +146,7 @@ const Home2 = () => {
                 </div>
                 <div className={classes.newsletter_signup_form_label_wrapper}>
                   <input
-                    class="form-input"
+                    className="form-input"
                     type="tel"
                     name="contact_number"
                     id="contact_number"
@@ -154,7 +154,7 @@ const Home2 = () => {
                   />
                   <label
                     className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
-                    for="contact_number"
+                    htmlFor="contact_number"
                     id="contact_number"
                   >
                     Contact number
@@ -171,7 +171,7 @@ const Home2 = () => {
             ></textarea> */}
               <div className={classes.newsletter_signup_form_label_wrapper}>
                 <input
-                  class="form-input"
+                  className="form-input"
                   type="text"
                   name="message"
                   id="message"
@@ -179,7 +179,7 @@ const Home2 = () => {
                 />
                 <label
                   className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
-                  for="message"
+                  htmlFor="message"
                   id="message"
                 >
                   Message

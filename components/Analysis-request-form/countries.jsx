@@ -252,7 +252,7 @@ const countries = () => {
     <select name="country" id="country" required className={classes.selected}>
             {Allcountries.map((country)=>{
               const{name, code}=country;
-              return <option value="`${name}`" className={classes.options}>{name}</option>;
+              return <option value="`${name}`" className={classes.options} key={code}>{name}</option>;
             })}
             </select>
   )

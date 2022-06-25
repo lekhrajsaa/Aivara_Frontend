@@ -30,7 +30,7 @@ const Home1 = () => {
             <button>Schedule demo</button>
           </div>
         </div>
-        <div classname={ styles.visionAndMission}>
+        <div className={ styles.visionAndMission}>
           <div className={styles.heading_content2}>
             <img src="/Rectangle.svg" />
             <p>We are supported by Ministry of Science and Technoloy </p>

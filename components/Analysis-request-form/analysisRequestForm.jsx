@@ -64,7 +64,7 @@ const analysisRequestForm = () => {
             <label htmlFor="firstName">First Name</label>
             <input
               type="text"
-              for="firstName"
+              
               id="firstName"
               minLength="3"
               required
@@ -72,30 +72,30 @@ const analysisRequestForm = () => {
             <label htmlFor="lastName">Last Name</label>
             <input
               type="text"
-              for="lastName"
+              
               id="lastName"
               minLength="3"
               required
             />
             <label htmlFor="jobTitle">Job Title</label>
-            <input type="text" for="jobTitle" id="jobTitle" required />
+            <input type="text"  id="jobTitle" required />
             <label htmlFor="companyName">Company Name</label>
             <input
               type="text"
-              for="companyName"
+            
               id="companyName"
               minLength="3"
               required
             />
             <label htmlFor="emailAddress">Email Address</label>
-            <input type="email" for="emailAddress" id="emailAddress" required />
+            <input type="email"  id="emailAddress" required />
             <label htmlFor="contactNo">Contact Number</label>
             <input
               type="tel"
-              for="contactNo"
+              
               id="contactNo"
               minLength="10"
-              maxlength="10"
+              maxLength="10"
               required
             />
             <label htmlFor="country" placeholder='Select your country'>Country</label>
@@ -125,7 +125,7 @@ const analysisRequestForm = () => {
 
                 className={classes.file_upload_input}
                 type="file"
-                for="attachments"
+             
                 id="attachments"
                 accept="image/*"
                 placeholder="Drag and Drop files here"
@@ -135,7 +135,7 @@ const analysisRequestForm = () => {
             <label htmlFor="analysisGoal">
               Sample Description/Analysis Goal
             </label>
-            <input type="text" for="analysisGoal" id="analysisGoal" required />
+            <input type="text"  id="analysisGoal" required />
             <button type="submit">Submit</button>
           </form>
         </div>
