@@ -152,9 +152,11 @@
 }
 .submit_btn {
   padding: 12px 50px 12px 50px;
-  background-color: #b7d7f7;
+  background-color: #3699FB;
+  color:white;
   border-radius: 5px;
   border: none;
+  font-size: 18px;
   outline: none;
   cursor: pointer;
   font-weight: bold;

@@ -7,8 +7,6 @@
 .headsection {
   display: flex;
   justify-content: space-between;
- 
-  
 }
 .body_container1 {
   
@@ -81,7 +79,7 @@ position:absolute;
  width: 250px;
  text-align: right;
 right: 50px;
- margin: 50px 50px ;
+ margin: 45px 50px ;
 }
 
 .heading_content2 p {
