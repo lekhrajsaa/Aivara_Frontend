@@ -15,7 +15,7 @@ const AnalysisSteps = () => {
       </div>
       <div className={styles.content2}>
         <div className={styles.content2_img}>
-          <img src="/laptop-image-with-analysis-report-1.jpg" />
+          <img src="/laptop-image-with-analysis-report.png" />
         </div>
         <div className={styles.list_content}>
           {/* <div>
