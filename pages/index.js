@@ -24,8 +24,8 @@ export default function Home() {
         <div
           className={styles.container}
           style={{
-            background:
-              "linear-gradient(135deg, rgb(156, 199, 252), #fff, #fff, #fff, #fff)",
+            // background:
+            //   "linear-gradient(135deg, rgb(156, 199, 252), #fff, #fff, #fff, #fff)",
             zIndex: "-2",
           }}
         >
@@ -37,7 +37,7 @@ export default function Home() {
 
         <Footer />
       </>}
-      {popUpOn && <AnalysisRequestFormPage setPopUpOn={setPopUpOn} />}
+      { popUpOn && <AnalysisRequestFormPage setPopUpOn={setPopUpOn} />}
     </>
   );
 }

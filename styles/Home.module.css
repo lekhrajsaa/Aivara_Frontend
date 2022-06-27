@@ -2,6 +2,8 @@
 
 .container {
   padding: 50px;
+  background: linear-gradient(135deg, rgb(156, 199, 252), #00ffff00, #00ffff00, #00ffff00, #00ffff00), 
+              radial-gradient(50% 45.36% at 100% 50%, #FFDEFA 41%, rgba(255, 255, 255, 0) 100%);
 }
 
 /* .headsection {

@@ -46,7 +46,7 @@
 width: 100%;
  padding: 100px;
 
- background: radial-gradient(50% 40.36% at 90% 40.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%) 
+ /* background: radial-gradient(50% 40.36% at 90% 40.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%); */
 }
 
 .heading_content1 h1 {
