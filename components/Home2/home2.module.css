@@ -245,14 +245,17 @@
   background: transparent;
 }
 .early_brackers {
-  width: 100%;
+  width: 70%;
   padding: 80px 70px 80px 75px;
 }
 .early_brackers h1 {
   font-family: "Raleway", sans-serif;
 }
-.braker_Logos{
-  margin: 0 10px;
+.brackers_logos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 10px;
 }
 /* .brackers_logos {
   width: 50%;
