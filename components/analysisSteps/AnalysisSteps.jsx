@@ -3,7 +3,7 @@ import React from "react";
 // import StepsSec from "../Analysis_details_slider/stepsSec";
 import Line from "../line_component/line";
 import Image from 'next/image';
-import laptopImg from '../../public/laptop-image-with-analysis-report.png';
+import laptopImg from './laptop-image-with-analysis-report.png';
 import styles from "./analysisSteps.module.css";
 
 const AnalysisSteps = () => {
