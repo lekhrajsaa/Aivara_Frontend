@@ -119,7 +119,7 @@ const Home2 = ({setPopUpOn}) => {
             <img src="/clogo4.png" alt="pic" style={{ marginLeft: "-60px" }} />{" "}
           </a>
         </div>
-      </div>
+      </div> 
 
       <div className={classes.form_area}>
         <h1>Get in touch with us</h1>
