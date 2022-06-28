@@ -94,13 +94,10 @@
   justify-content: space-between;
 }
 /* contact form */
-/* .form_wrapper {
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+ .form_wrapper label {
+  color: #395D89;
+  font-size: 20px;
+} 
 .newsletter_signup-form-label {
   font-size: 18px;
   color: #bbcac6;
@@ -130,6 +127,8 @@
   border-left: none;
   border-right: none;
   padding: 10px;
+ 
+  font-size: 20px;
   /* border-color: #3699fb; */
   border-color: #8fb3d8;
   width: 550px;
@@ -245,14 +244,17 @@
   background: transparent;
 }
 .early_brackers {
-  width: 100%;
+  width: 70%;
   padding: 80px 70px 80px 75px;
 }
 .early_brackers h1 {
   font-family: "Raleway", sans-serif;
 }
-.braker_Logos{
-  margin: 0 10px;
+.brackers_logos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 10px;
 }
 /* .brackers_logos {
   width: 50%;

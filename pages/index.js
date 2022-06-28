@@ -20,24 +20,26 @@ export default function Home() {
 
   return (
     <>
-    {!popUpOn && <>
-        <div
-          className={styles.container}
-          style={{
-            // background:
-            //   "linear-gradient(135deg, rgb(156, 199, 252), #fff, #fff, #fff, #fff)",
-            zIndex: "-2",
-          }}
-        >
-          <Home1 setPopUpOn={setPopUpOn} />
-        </div>
-        <AnalysisSteps />
-        <ScheduleDemo setPopUpOn={setPopUpOn} />
-        <Home2 setPopUpOn={setPopUpOn} />
+      {!popUpOn && (
+        <>
+          <div
+            className={styles.container}
+            style={{
+              // background:
+              //   "linear-gradient(135deg, rgb(156, 199, 252), #fff, #fff, #fff, #fff)",
+              zIndex: "-2",
+            }}
+          >
+            <Home1 setPopUpOn={setPopUpOn} />
+          </div>
+          <AnalysisSteps />
+          <ScheduleDemo setPopUpOn={setPopUpOn} />
+          <Home2 setPopUpOn={setPopUpOn} />
 
-        <Footer />
-      </>}
-      { popUpOn && <AnalysisRequestFormPage setPopUpOn={setPopUpOn} />}
+          <Footer setPopUpOn={setPopUpOn} />
+        </>
+      )}
+      {popUpOn && <AnalysisRequestFormPage setPopUpOn={setPopUpOn} />}
     </>
   );
 }

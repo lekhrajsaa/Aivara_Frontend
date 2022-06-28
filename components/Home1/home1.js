@@ -15,14 +15,13 @@ const Home1 = ({setPopUpOn}) => {
         <div className={styles.headsection}>
           <div className={styles.header_logo}>
             <h3>
-                  <img src="/Frame1.png" />
-
+              <img src="/Frame1.png" style={{ marginTop: "3px" }} />
             </h3>
 
             <h3 className={styles.header_log_title}>AIVARA</h3>
           </div>
           <div className={styles.login_button}>
-            <p>Login</p >
+            <p>Login</p>
           </div>
         </div>
         <div className={styles.body_container1}>
@@ -35,7 +34,7 @@ const Home1 = ({setPopUpOn}) => {
             <button onClick={scheduleDemoClickHanlder}>Schedule demo</button>
           </div>
         </div>
-        <div className={ styles.visionAndMission}>
+        <div className={styles.visionAndMission}>
           <div className={styles.heading_content2}>
             <img src="/Rectangle.svg" />
             <p>We are supported by Ministry of Science and Technoloy </p>
@@ -44,9 +43,9 @@ const Home1 = ({setPopUpOn}) => {
             <div className={styles.heading_content3}>
               <h1>Our mission</h1>
               <p>
-                Top protect the environment and develop
+                To protect the environment and develop
                 <br />
-                Creative AI-based solutions to complex climate
+                creative AI-based solutions to complex climate
                 <br />
                 and industry problems
               </p>
@@ -55,9 +54,9 @@ const Home1 = ({setPopUpOn}) => {
               <div>
                 <h1>Our vision</h1>
                 <p>
-                  Top be a leading organisation in
+                  To be a leading organisation in
                   <br />
-                  innovation,environmentally conscious
+                  innovative, environmentally conscious
                   <br />
                   technology
                 </p>
@@ -65,7 +64,6 @@ const Home1 = ({setPopUpOn}) => {
             </div>
           </div>
         </div>
-        
       </div>
       {/* <div className={styles.heading_content5}>
         <h1>Water quality checks are time consuming,</h1>

@@ -5,7 +5,7 @@ import classes from "./home2.module.css";
 import Cards from "../BusinessCard/Cards";
 import ChangingText from "../we_solve/changingText";
 import Contactus from "./contactus_form/contactus";
-
+import Link from "next/link";
 const carddata = [
   {
     id: 1,
@@ -34,7 +34,7 @@ const carddata = [
     id: 5,
     image: "/CardImg5.png",
     context:
-      "Our software platform generates data quality reports within 10 mins.",
+      "",
   },
 ];
 
@@ -75,44 +75,55 @@ const Home2 = ({setPopUpOn}) => {
       <div className={classes.homethree_heading}>
         <div className={classes.homethree_heading_h1}>
           <h1>
-            Making water quality analysis{" "}
-            <strong className={classes.headingstrong}>easire</strong>
+            Making water quality analysis
+            <strong className={classes.headingstrong}> easier</strong>
           </h1>
         </div>
 
         <div className={classes.business_card}>
           {carddata.map((item) => {
             const { image, context, id } = item;
-            return (
-              <Cards key={id} imgsrc={image} info={context} />
-            );
+            return <Cards key={id} imgsrc={image} info={context} />;
           })}
         </div>
       </div>
       <div className={classes.btn_second}>
-        <button>Know more</button>
+        <button onClick={scheduleDemoBtnClickHanlder}>Know more</button>
       </div>
       <div className={classes.water_problem_content}>
         <h5 className={classes.first_statment}>
           <ChangingText />
         </h5>
         <p className={classes.second_statement}>Discover more by experience</p>
-        <button onClick={scheduleDemoBtnClickHanlder} className={classes.btn_third}>Schedule demo</button>
+        <button
+          onClick={scheduleDemoBtnClickHanlder}
+          className={classes.btn_third}
+        >
+          Schedule demo
+        </button>
       </div>
 
       <div className={classes.early_brackers}>
         <h1>Early brackers</h1>
         <div className={classes.brackers_logos}>
-          <img src="/Rectangle71.png" alt="pic" />
-          <img src="/clogo2.png" alt="pic" />
-          <img src="/clogo3.png" alt="pic" />
-          <img src="/clogo4.png" alt="pic" />
+          <a href="https://dst.gov.in/" target="blank">
+            <img src="/Rectangle71.png" alt="pic" />
+          </a>
+          <a href="https://bhau.org/" target="blank">
+            <img src="/clogo2.png" alt="pic" />{" "}
+          </a>
+          <a href="https://nidhi-prayas.org/" target="blank">
+            <img src="/clogo3.png" alt="pic" />{" "}
+          </a>
+          <a href="#" target="blank">
+            <img src="/clogo4.png" alt="pic" style={{ marginLeft: "-60px" }} />{" "}
+          </a>
         </div>
-      </div>
+      </div> 
 
       <div className={classes.form_area}>
         <h1>Get in touch with us</h1>
-          <Contactus />
+        <Contactus />
       </div>
 
       {/* <Footer /> */}
