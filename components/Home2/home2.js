@@ -104,7 +104,7 @@ const Home2 = ({setPopUpOn}) => {
       </div>
 
       <div className={classes.early_brackers}>
-        <h1>Early brackers</h1>
+        <h1>Early backers</h1>
         <div className={classes.brackers_logos}>
           <a href="https://dst.gov.in/" target="blank">
             <img src="/Rectangle71.png" alt="pic" />
