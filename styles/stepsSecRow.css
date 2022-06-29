@@ -1,7 +1,10 @@
 .swiper-slide {
-    opacity: 0.4;
+    opacity: 0;
     transition: 0.4s ease;
     transform: scale(0.9);
+    /* outline: 2px solid red; */
+    display: flex;
+    align-items: center;
 }
 
 .swiper-slide.swiper-slide-active {
