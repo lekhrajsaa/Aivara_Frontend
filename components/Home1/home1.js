@@ -35,12 +35,12 @@ const Home1 = ({setPopUpOn}) => {
           </div>
         </div>
         <div className={styles.visionAndMission}>
-          <div className={styles.heading_content2}>
+          <div className={`${styles.heading_content2} ${styles.heading_content}`}>
             <img src="/Rectangle.svg" />
             <p>We are supported by Ministry of Science and Technoloy </p>
           </div>
           <div className={styles.body_container2}>
-            <div className={styles.heading_content3}>
+            <div className={`${styles.heading_content3} ${styles.heading_content}`}>
               <h1>Our mission</h1>
               <p>
                 To protect the environment and develop
@@ -50,7 +50,7 @@ const Home1 = ({setPopUpOn}) => {
                 and industry problems
               </p>
             </div>
-            <div className={styles.heading_content4}>
+            <div className={`${styles.heading_content4} ${styles.heading_content}`}>
               <div>
                 <h1>Our vision</h1>
                 <p>

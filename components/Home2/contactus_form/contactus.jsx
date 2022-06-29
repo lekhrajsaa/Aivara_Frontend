@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from '../home2.module.css'
+import classes from './../home2.module.css'
 
 const Contactus = () => {
 

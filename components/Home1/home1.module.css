@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900);
+/* @import url(https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900); */
 
 .headsection {
   display: flex;
@@ -39,23 +39,29 @@
   cursor: pointer;
 }
 .body_container2{
-
+  
 width: 100%;
  padding: 100px;
-
+ 
  /* background: radial-gradient(50% 40.36% at 90% 40.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%); */
 }
 
+.heading_content h1{
+  color: #395d89;
+  font-family: "Sora", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
 .heading_content1 h1 {
   width: auto;
   color: #4e4e4e;
   font-family: "Sora", sans-serif;
-  font-size: 60px;
-  font-weight:900;
+  font-size: 50px;
+  font-weight:700;
 }
 .heading_content1 p {
   margin-top: -20px;
-
+  
 }
 .heading_content1 button {
   width: 260px;
@@ -71,6 +77,7 @@ width: 100%;
   border-radius: 5px;
   cursor: pointer;
 }
+
 .heading_content2 {
   position:absolute;
   bottom: -100px;
@@ -81,24 +88,22 @@ width: 100%;
 }
 
 .heading_content2 p {
-position: relative;
-top: -5px;
-font-family: 'Sora';
-font-weight:bolder;
-line-height: 15px;
-font-size: 15px;
+  position: relative;
+  top: -5px;
+  font-family: 'Sora';
+  font-weight:bolder;
+  line-height: 15px;
+  font-size: 15px;
 }
 .heading_content3 h1 {
-  color: #395d89;
-  font-family: "Sora", sans-serif;
-  font-size: 50px;
+
   margin-top: 250px; 
-  font: bold;
 }
 .heading_content3 p {
   margin-top: -20px;
   color: #395d89;
-  font-size: 25px;
+  font-size: 24px;
+  font-weight: 400;
 }
 .heading_content4 {
   display: flex;

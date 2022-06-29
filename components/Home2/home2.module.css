@@ -130,7 +130,8 @@
  
   font-size: 20px;
   /* border-color: #3699fb; */
-  border-color: #8fb3d8;
+  /* border-color: #B7D7F7; */
+  border-bottom: 2px solid #B7D7F7;
   width: 550px;
 }
 .newsletter_signup_form_label_wrapper input[type="text"]:focus,
@@ -160,7 +161,8 @@
   font-size: 18px;
   outline: none;
   cursor: pointer;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-weight: 300;
   font-family: "Sora", sans-serif;
 }
 /* footer */

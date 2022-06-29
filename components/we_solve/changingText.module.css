@@ -12,10 +12,11 @@
     color: #A9A9A9;
     line-height: 85px;
     width: 884px;
-    
+    font-weight: 400;
 }
 .changingWord{
     color: #3699FB;
     transition: 0.5s ease;
+    font-weight: 600;
        
 }
