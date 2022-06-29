@@ -13,7 +13,7 @@
   width: 220px;
   background-color: #fff;
   border-radius: 10px;
-  @include longshadow(rgba(67, 74, 84, 0.02), rgba(240, 242, 245, 0), 40);
+  @include longshadow(rgba(67, 74, 84, 0.02), rgba(240, 242, 245, 0), 40); 
   display: flex;
   flex-direction: column;
   margin: 25px;
