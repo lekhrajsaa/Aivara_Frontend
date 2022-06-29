@@ -30,9 +30,9 @@ const ChangingText = () => {
 
     return (
         < div className={classes.section}>
-            <div className={classes.rightside_text}>
+            {/* <div className={classes.rightside_text}>
                 we generate data quality <br /> reports within 10 mins
-            </div>
+            </div> */}
             <div className={classes.paragraphContainer}>
                 <p className={classes.ChangingPara}>
                     We solve <Line style={{ height: "72px" }}>complex</Line> water
