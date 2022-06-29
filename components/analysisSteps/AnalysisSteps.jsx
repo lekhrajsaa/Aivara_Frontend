@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import StepsSec from "../Analysis_details_slider2/stepsSec";
 // import StepsSec from "../Analysis_details_slider/stepsSec";
 import Line from "../line_component/line";
+import Image from 'next/image';
+import laptopImg from './laptop-image-with-analysis-report.png';
 import styles from "./analysisSteps.module.css";
 import classes from '../Analysis_details_slider2/step.module.css'
 
@@ -74,7 +76,8 @@ const AnalysisSteps = () => {
       <div ref={stepsMainContainer}  className={styles.content2}>
         {/* <div style={{ outline: '2px solid red' }} className={styles.list_content}> */}
         <div className={styles.content2_img}>
-          <img src="/laptop-image-with-analysis-report.png" />
+          <Image src={laptopImg} />
+          {/* <img src="/laptop-image-with-analysis-report.png" /> */}
         </div>
         {/* <div>
             <p>
