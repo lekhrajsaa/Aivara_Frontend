@@ -34,7 +34,7 @@ export default function Home() {
         <AnalysisSteps />
         <ScheduleDemo setPopUpOn={setPopUpOn} />
         <Home2 setPopUpOn={setPopUpOn} />
-
+        
         <Footer />
       </>}
       { popUpOn && <AnalysisRequestFormPage setPopUpOn={setPopUpOn} />}

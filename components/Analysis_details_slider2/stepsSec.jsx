@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Mousewheel } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 // import Swiper from 'swiper';
 import Step from './step';
 
@@ -24,24 +24,19 @@ const steps = [
 
 const StepsSec = () => {
 
-    return (
-        <div className={classes.stepsSec}>
 
-                <Swiper
-                    direction='vertical'
-                    modules={[Mousewheel]}
-                    mousewheel={true}
-                    onSlideChange={(e) => console.log(e)}
-                    className={classes.stepsContainer}
-                    style={{ height: '150px' }}
-                >
-                    {steps.map((step, i) => {
-                        return <SwiperSlide key={step.id}>
-                            <Step key={step.id} countNum={i + 1} stepInfo={step.stepInfo} />
-                        </SwiperSlide>
-                    }
-                    )}
-                </Swiper>
+    function stepSecClickHandler() {
+    }
+
+    return (
+        <div  className={classes.stepsSec}>
+
+            <div className={classes.stepsContainer}>
+                {steps.map((step, i) => {
+                    return <Step key={step.id} countNum={i + 1} stepInfo={step.stepInfo} />
+                })}
+            </div>
+
         </div>
     );
 }
