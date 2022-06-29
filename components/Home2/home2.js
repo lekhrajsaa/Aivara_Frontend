@@ -116,7 +116,7 @@ const Home2 = ({setPopUpOn}) => {
             <img src="/clogo3.png" alt="pic" />{" "}
           </a>
           <a href="#" target="blank">
-            <img src="/clogo4.png" alt="pic" style={{ marginLeft: "-60px" }} />{" "}
+            <img src="/clogo4.png" alt="pic" />{" "}
           </a>
         </div>
       </div> 
