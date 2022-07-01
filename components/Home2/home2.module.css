@@ -304,101 +304,8 @@
   height: 100px;
 } */
 
-@media (max-width: 768px) {
-
-  .water_problem_content{
-    text-align: center;
-    width: 100%;
-    padding: 26px 5%;
-  }
-  .second_statement{
-    font-family: 'sora';
-    font-size: 10px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .btn_third{
-    font-size: 12px;
-    padding: 13px 25px;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .homethree_heading_h1{
-    padding: 0;
-    text-align: center;
-  }
-  .homethree_heading_h1 h1{
-    font-size: 30px;
-
-    font-weight: 400;
-  }
 
 
-
-  .early_brackers {
-    margin: 0;
-    padding: 5%;
-    width: 100%;
-    text-align: center;
-  }
-
-  .early_brackers h1 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-
-  .brackers_logos {
-    text-align: center;
-    width: 80%;
-    margin: auto;
-  }
-
-  .brackers_logos img {
-    height: 10vw;
-    margin: 5px;
-  }
-
-  .form_area {
-    padding: 5%;
-  }
-
-  .form_area h1 {
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-
-  .form_area label {
-    font-weight: 400;
-    font-size: 14px;
-  }
-  .form_area button{
-    font-size: 14px;
-  }
-  .content6 {
-    display: table;
-    justify-content: center;
-  }
-
-  .content6 img {
-    align-items: center;
-    width: auto;
-    height: 150px;
-  }
-
-  .first_bg_img,
-  .second_bg_img {
-    height: 40vh;
-  }
-}
-@media screen and (max-width: 900px) {
-  .form_area > h1{
-    font-size: 40px;
-  }
-
-}
 @media (max-width: 1400px) {
 
   .first_bg_img,
@@ -493,6 +400,110 @@
 
 
 }
+@media screen and (max-width: 900px) {
+  .form_area > h1{
+    font-size: 40px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  
+  .water_problem_content{
+    text-align: center;
+    width: 100%;
+    padding: 26px 5%;
+  }
+  .second_statement{
+    font-family: 'sora';
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .btn_third{
+    font-size: 12px;
+    padding: 13px 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .homethree_heading_h1{
+    padding: 0;
+    text-align: center;
+  }
+  .homethree_heading_h1 h1{
+    font-size: 30px;
+
+    font-weight: 400;
+  }
+
+
+  .early_brackers {
+    margin: 0;
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .early_brackers h1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .brackers_logos {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .brackers_logos img {
+    height: 10vw;
+    margin: 5px;
+  }
+
+  .form_area {
+    padding: 5%;
+  }
+
+  .form_area h1 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .form_area label {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .newsletter_signup_form_label_wrapper{
+    margin-bottom: 20px;
+  }
+  .newsletter_signup_form_label_wrapper input {
+    font-size: 14px;
+    padding: 10px 2px;
+  }
+  .form_area button{
+    font-size: 14px;
+  }
+  .content6 {
+    display: table;
+    justify-content: center;
+  }
+
+  .content6 img {
+    align-items: center;
+    width: auto;
+    height: 150px;
+  }
+
+  .first_bg_img,
+  .second_bg_img {
+    height: 40vh;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .homethree_heading_h1 h1{
     font-size: 24px;
@@ -504,7 +515,9 @@
     width: 110% !important;
     padding-bottom: 2.5px;
   }
-
+  .form_area {
+    padding-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 430px) and (max-width: 750px) {

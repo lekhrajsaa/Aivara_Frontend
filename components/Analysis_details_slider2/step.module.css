@@ -29,6 +29,11 @@
 
 @media screen and (max-width: 1080px){
     .step{
+        height: fit-content;
+        text-align: center;
+        align-items: center;
+        height: fit-content;
+        margin: auto;
         width: 100%;
     }
     .countNum{
