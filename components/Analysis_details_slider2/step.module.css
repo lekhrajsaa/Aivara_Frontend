@@ -26,3 +26,19 @@
     /* transform: scale(1.5); */
     opacity: 1;
 }
+
+@media screen and (max-width: 600px){
+    .step{
+        height: fit-content;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        width: auto;
+    }
+    .countNum{
+        font-size: 40px;
+    }
+    .stepInfo{
+        font-size: 14px;
+    }
+}

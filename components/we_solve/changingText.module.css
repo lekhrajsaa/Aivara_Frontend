@@ -1,8 +1,8 @@
 
 .rightside_text{
     position: absolute;
-    right:100px;
-   margin-bottom: 20px;
+    right: 100px;
+    margin-bottom: 20px;
     font-size: 15px;
 }
 .ChangingPara{
@@ -11,12 +11,35 @@
     text-align: left;
     color: #A9A9A9;
     line-height: 85px;
-    width: 884px;
+    /* width: 884px; */
+    width: 70%;
     font-weight: 400;
+}
+.ChangingPara > span{
+    height: 75px;
 }
 .changingWord{
     color: #3699FB;
     transition: 0.5s ease;
     font-weight: 600;
        
+}
+
+@media screen and (max-width: 600px) {
+    .ChangingPara{
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0;
+        width: 100%;
+        font-weight: 400;
+        padding: 10px;
+    }
+    .ChangingPara > span{
+        height: 26px;
+    }
+    .ChangingPara > span > span{
+        height: 1px;
+    }
+
 }

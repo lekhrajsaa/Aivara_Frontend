@@ -4,12 +4,14 @@ import StepsSec from "../Analysis_details_slider2/stepsSec";
 import Line from "../line_component/line";
 import Image from 'next/image';
 import laptopImg from './laptop-image-with-analysis-report.png';
+import laptopImg1 from '../../public/laptopImage.png';
 import styles from "./analysisSteps.module.css";
 import classes from '../Analysis_details_slider2/step.module.css'
 
 const AnalysisSteps = () => {
 
   const stepsMainContainer = useRef();
+  const [smallDevice, setSmallDevice] = useState(false);
 
   useEffect(() => {
     const steps = document.querySelectorAll(`.${classes.step}`);
@@ -18,48 +20,65 @@ const AnalysisSteps = () => {
     console.log(steps)
 
     function wheelEventHandler(e) {
-      e.preventDefault();
-      if (e.deltaY > 0 && canScroll && currentIndex < 2) {
-        canScroll = false;
-        currentIndex++;
-        steps[currentIndex].scrollIntoView();
-        console.log('scrolling into view')
-        setTimeout(() => {
-          canScroll = true;
-        }, 300);
+
+      if (window.innerWidth > 600) {
+        console.log(window.innerWidth, (window.innerWidth < 600))
+        e.preventDefault();
+        if (e.deltaY > 0 && canScroll && currentIndex < 2) {
+          canScroll = false;
+          currentIndex++;
+          steps[currentIndex].scrollIntoView();
+          console.log('scrolling into view')
+          setTimeout(() => {
+            canScroll = true;
+          }, 300);
+
+        }
+        if (e.deltaY < 0 && canScroll && currentIndex > 0) {
+          canScroll = false;
+          currentIndex--;
+          steps[currentIndex].scrollIntoView();
+          console.log('scrolling into view')
+          setTimeout(() => {
+            canScroll = true;
+          }, 300);
+
+        }
+
+        //Removing EventListeners
+        if (e.deltaY > 0 && currentIndex === 2 && canScroll) {
+          // console.log('removing event')
+          window.scrollBy(0, 600)
+          // stepsMainContainer.current.removeEventListener('wheel', wheelEventHandler);
+        }
+
+        if (e.deltaY < 0 && currentIndex === 0 && canScroll) {
+          // console.log('removing event')
+          window.scrollBy(0, -600)
+          // stepsMainContainer.current.removeEventListener('wheel', wheelEventHandler);
+        }
+
 
       }
-      if (e.deltaY < 0 && canScroll && currentIndex > 0) {
-        canScroll = false;
-        currentIndex--;
-        steps[currentIndex].scrollIntoView();
-        console.log('scrolling into view')
-        setTimeout(() => {
-          canScroll = true;
-        }, 300);
-
-      }
-
-      //Removing EventListeners
-      if (e.deltaY > 0 && currentIndex === 2 && canScroll) {
-        // console.log('removing event')
-        window.scrollBy(0, 600)
-        // stepsMainContainer.current.removeEventListener('wheel', wheelEventHandler);
-      }
-      
-      if(e.deltaY < 0 && currentIndex === 0 && canScroll){
-        // console.log('removing event')
-        window.scrollBy(0, -600)
-        // stepsMainContainer.current.removeEventListener('wheel', wheelEventHandler);
-      }
-
-
     }
 
     stepsMainContainer.current.addEventListener('wheel', wheelEventHandler, { passive: false }, true)
 
+
+    if (window.innerWidth < 600) {
+      setSmallDevice(true)
+    }
+
+    window.onresize = e => {
+      if (window.innerWidth < 600) {
+        setSmallDevice(true)
+      } else {
+        setSmallDevice(false)
+      }
+    }
+
     return () => {
-      // document.querySelector(`.${classes.content2}`).removeEventListener('wheel', wheelEventHandler);
+
     };
   }, []);
 
@@ -73,31 +92,19 @@ const AnalysisSteps = () => {
         </h1>
         <h2>Know how we break the norm</h2>
       </div>
-      <div ref={stepsMainContainer}  className={styles.content2}>
+      <div ref={stepsMainContainer} className={styles.content2}>
         {/* <div style={{ outline: '2px solid red' }} className={styles.list_content}> */}
         <div className={styles.content2_img}>
-          <Image src={laptopImg} />
+          {
+            !smallDevice && <Image src={laptopImg} />
+          }
+          {
+            smallDevice && <Image src={laptopImg1} />
+          }
+
+          {/* <Image src={laptopImg} /> */}
           {/* <img src="/laptop-image-with-analysis-report.png" /> */}
         </div>
-        {/* <div>
-            <p>
-              <span>1</span>
-              <br />
-              Upload <strong>microscopic images</strong>
-            </p>
-
-            <p>
-              <span>2</span>
-              <br />
-              Our <strong>AI model analyzes</strong> the images which is trained
-              on <strong>biological indicator database</strong>
-            </p>
-            <p>
-              <span>3</span>
-              <br />
-              Get your water quality report in <strong>0 mins</strong>
-            </p>
-          </div> */}
         <StepsSec />
         {/* </div> */}
       </div>

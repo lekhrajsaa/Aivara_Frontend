@@ -25,13 +25,9 @@ const steps = [
 
 const StepsSec = () => {
 
-
-    function stepSecClickHandler() {
-    }
-
     return (
         <div  className={classes.stepsSec}>
-
+            
             <div className={classes.stepsContainer}>
                 {steps.map((step, i) => {
                     return <Step key={step.id} countNum={i + 1} stepInfo={step.stepInfo} />

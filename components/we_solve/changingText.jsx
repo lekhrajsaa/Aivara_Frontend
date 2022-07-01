@@ -35,7 +35,7 @@ const ChangingText = () => {
             </div> */}
             <div className={classes.paragraphContainer}>
                 <p className={classes.ChangingPara}>
-                    We solve <Line style={{ height: "72px" }}>complex</Line> water
+                    We solve <Line >complex</Line> water
                     problems using cutting edge technologies <br /> for  <ChangingWord text={currentWord} />
                 </p>
             </div>

@@ -11,30 +11,29 @@ const carddata = [
     id: 1,
     image: "/CardImg1.png",
     context:
-      "Using computer vision, we process microscopics image of watersample",
+      "We process microscopic images of water sample",
   },
   {
     id: 2,
     image: "/CardImg2.png",
     context:
-      "Our AI model has been trained on an extensive dataset having research data over 10 years",
+      "Our AI model is trained on  research data of over 10 years",
   },
   {
     id: 3,
     image: "/CardImg3.png",
     context:
-      "We detemine chemical, physical and biological parameters of water quality",
+      "We determine chemical, physical and biological parameters of water quality",
   },
   {
     id: 4,
     image: "/CardImg4.png",
-    context: "patent pendding technology with current accuracy of 85%",
+    context: "Patent pending  technology with current accuracy of 85%",
   },
   {
     id: 5,
     image: "/CardImg5.png",
-    context:
-      "",
+    context: "We generate data quality reports within 10 mins",
   },
 ];
 
@@ -75,7 +74,7 @@ const Home2 = ({setPopUpOn}) => {
       <div className={classes.homethree_heading}>
         <div className={classes.homethree_heading_h1}>
           <h1>
-            Making water quality analysis
+            Making water analysis
             <strong className={classes.headingstrong}> easier</strong>
           </h1>
         </div>

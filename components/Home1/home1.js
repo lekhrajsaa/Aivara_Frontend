@@ -6,17 +6,19 @@ import Footer from "../Footer/Footer";
 const Home1 = ({setPopUpOn}) => {
 
   function scheduleDemoClickHanlder (){
-    setPopUpOn(true)
+    setPopUpOn(true);
   }
+
+  
 
   return (
     <>
       <div>
         <div className={styles.headsection}>
           <div className={styles.header_logo}>
-            <h3>
+            <figure>
               <img src="/Frame1.png" style={{ marginTop: "3px" }} />
-            </h3>
+            </figure>
 
             <h3 className={styles.header_log_title}>AIVARA</h3>
           </div>

@@ -35,3 +35,10 @@
 .swiper-slide.swiper-slide-active{
     opacity: 1;
 } */
+
+@media screen and (max-width: 600px){
+    .stepsContainer{
+        width: auto;
+        padding: 5%;
+    }
+}

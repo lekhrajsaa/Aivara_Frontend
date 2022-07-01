@@ -1,21 +1,22 @@
 .demo_container {
   display: flex;
   width: 100%;
-  height: 600px;
+  /* height: 600px; */
   background: linear-gradient(100.32deg, #3699FB -17.45%, rgba(224, 167, 216, 0.908) 120.34%);
 
-
+  padding: 150px 100px;
   border-radius: 5px;
   margin: 20px 0px;
 }
 
 .container_heading {
-  display: flex;
-
+  /* display: flex;
+  
   flex-direction: column;
-  align-items: flex-start;
-  margin-top:50px;
-  margin-left: 200px;
+  align-items: flex-start; */
+  /* margin-top:50px; */
+  /* margin-left: 200px; */
+  text-align: left;
 }
 
 .container_heading p {
@@ -25,11 +26,12 @@
   font-size: 50px;
   line-height: 169%;
   color: #ffffff;
-} 
+  margin-top: 0;
+}
 
 .container_heading button {
-  width: 270px;
-  height: 50px;
+  /* width: 270px;
+  height: 50px; */
   font-family: "Sora";
   font-style: normal;
   font-weight: 400;
@@ -40,46 +42,56 @@
   background: #ffffff;
   border-color: transparent;
   border-radius: 5px;
-  margin-bottom:20px;
+  /* margin-bottom:20px; */
   cursor: pointer;
+  padding: 0.8em 2em;
 }
 
 @media (max-width: 1050px) {
   .demo_container {
     height: auto;
-  
+    width: 100%;
+    padding: 14% 6%;
   }
-  .container_heading p{
-  font-size: 30px;
-  
-  
+
+  .container_heading p {
+    font-size: 30px;
+
+
   }
-  .container_heading{
-    margin-left: 50px;
+
+  .container_heading {
+    /* margin-left: 50px; */
   }
 
 }
+
 @media (max-width: 700px) {
-.container_heading p{
-  font-size: 20px;
+  .container_heading p {
+    font-size: 20px;
   }
-  .container_heading{
-    margin-left: 50px;
+
+  .container_heading {
+    /* margin-left: 50px; */
+    text-align: center;
+
   }
-  .container_heading button{
-    width: 260px;
-    height: 30px;
+
+  .container_heading button {
+    /* width: 260px;
+    height: 30px; */
     font-size: 15px;
   }
 }
 
 @media (max-width: 450px) {
-.container_heading p{
-  font-size: 14px;
+  .container_heading p {
+    font-size: 14px;
   }
-  .container_heading button{
-    width: 160px;
-    height: 25px;
+
+  .container_heading button {
+    /* width: 160px;
+    height: 25px; */
     font-size: 12px;
   }
 }
