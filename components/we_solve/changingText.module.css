@@ -25,6 +25,19 @@
        
 }
 
+@media screen and (max-width: 1048px) {
+    .ChangingPara{
+        font-size: 30px;
+        line-height: 45px;
+        margin: 0;
+        width: 75%;
+        font-weight: 400;
+    }
+    .ChangingPara > span{
+        height: 40px;
+    }
+
+}
 @media screen and (max-width: 600px) {
     .ChangingPara{
         text-align: center;

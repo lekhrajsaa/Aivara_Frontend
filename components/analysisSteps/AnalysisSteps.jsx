@@ -21,7 +21,7 @@ const AnalysisSteps = () => {
 
     function wheelEventHandler(e) {
 
-      if (window.innerWidth > 600) {
+      if (window.innerWidth > 900) {
         console.log(window.innerWidth, (window.innerWidth < 600))
         e.preventDefault();
         if (e.deltaY > 0 && canScroll && currentIndex < 2) {
@@ -65,12 +65,12 @@ const AnalysisSteps = () => {
     stepsMainContainer.current.addEventListener('wheel', wheelEventHandler, { passive: false }, true)
 
 
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 900) {
       setSmallDevice(true)
     }
 
     window.onresize = e => {
-      if (window.innerWidth < 600) {
+      if (window.innerWidth < 900) {
         setSmallDevice(true)
       } else {
         setSmallDevice(false)

@@ -9,7 +9,7 @@
     justify-content: center;
     /* outline: 2px solid lime; */
     text-align: left;
-
+    width: 100%;
 }
 .countNum{
     font-size: 70px;
@@ -27,13 +27,45 @@
     opacity: 1;
 }
 
+@media screen and (max-width: 1080px){
+    .step{
+        width: 100%;
+    }
+    .countNum{
+        font-size: 60px;
+    }
+    .stepInfo{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 900px){
+    .step{
+        height: fit-content;
+        text-align: center;
+        align-items: center;
+        height: fit-content;
+        margin: auto;
+        width: 100%;
+    }
+    .step:nth-child(2){
+        margin: 20px 0;
+    }
+    .countNum{
+        text-align: center;
+        font-size: 60px;
+    }
+    .stepInfo{
+        text-align: center;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+}
 @media screen and (max-width: 600px){
     .step{
         height: fit-content;
         text-align: center;
         align-items: center;
         font-size: 14px;
-        width: auto;
     }
     .countNum{
         font-size: 40px;

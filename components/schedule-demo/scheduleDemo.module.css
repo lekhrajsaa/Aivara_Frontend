@@ -52,11 +52,12 @@
     height: auto;
     width: 100%;
     padding: 14% 6%;
+    justify-content: center;
   }
 
   .container_heading p {
     font-size: 30px;
-
+    width: 100%;
 
   }
 
