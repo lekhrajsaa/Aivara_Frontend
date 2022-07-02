@@ -22,7 +22,7 @@
     top: 0; */
     right: 0px;
     transition: 0.3s ease;
-    width: 500px;
+    width: 100%;
     /* height: 100vh; */
     margin-left: auto;
 }
@@ -35,3 +35,34 @@
 .swiper-slide.swiper-slide-active{
     opacity: 1;
 } */
+
+
+@media screen and (max-width: 1013px){
+    .stepsSec{
+        width: 400px;
+        /* padding: 5%; */
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 900px){
+    .stepsSec{
+        width: 100%;
+        /* padding: 5%; */
+        padding: 20px;
+    }
+    .stepsContainer{
+        width: 100%;
+        padding: 5%;
+    }
+}
+@media screen and (max-width: 600px){
+    .stepsSec{
+        width: 100%;
+        /* padding: 5%; */
+        padding: 20px;
+    }
+    .stepsContainer{
+        width: 100%;
+        padding: 5%;
+    }
+}

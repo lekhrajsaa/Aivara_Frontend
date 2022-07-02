@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .first_bg_img {
   /* margin: 50px 0; */
   background-image: url("/waterdiagnosis.png");
@@ -12,6 +13,7 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .first_bg_img p {
   margin: 0px;
   position: relative;
@@ -22,20 +24,24 @@
   font-size: 70px;
   font-family: "Sora", sans-serif;
 }
+
 .first_bg_img strong {
   font-weight: 900;
   font: bolder;
 }
+
 .first_bg_img_belowContent {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .first_bg_img_belowContent p {
   font-size: 70px;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
 }
+
 .second_bg_img {
   background-image: url("/publicbodies.png");
   width: 100%;
@@ -51,6 +57,7 @@
 
   width: 100%;
 }
+
 /* .homethree_heading h1 {
   font-size: 50px;
   justify-content: first baseline;
@@ -58,17 +65,22 @@
 .homethree_heading_h1 {
   padding: 70px;
 }
+
 .homethree_heading_h1 h1 {
   color: #979797;
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Sora", sans-serif;
+  font-weight: 400;
 }
+
 .headingstrong {
   color: #3699fb;
 }
+
 .homethree_heading {
   margin-top: 100px;
 }
+
 .business_cards {
   width: 100%;
   justify-content: center;
@@ -85,19 +97,25 @@
 .form_area {
   padding: 100px;
 }
-.form_area h1 {
+
+.form_area>h1 {
   font-family: "Raleway", sans-serif;
   color: #3699fb;
+  margin-bottom: 50px;
+  font-size: 45px;
 }
+
 .formsAndtextarea {
   display: flex;
   justify-content: space-between;
 }
+
 /* contact form */
- .form_wrapper label {
+.form_wrapper label, .formsAndtextarea label {
   color: #395D89;
   font-size: 20px;
-} 
+}
+
 .newsletter_signup-form-label {
   font-size: 18px;
   color: #bbcac6;
@@ -106,6 +124,7 @@
   left: 2px;
   transition: all ease-in-out 0.2s;
 }
+
 .newsletter_signup_form_label_shifted {
   font-size: 13px;
   color: #bbcac6;
@@ -113,33 +132,29 @@
   transition: all ease-in-out 0.2s;
   left: 4px;
 }
+
 .newsletter_signup_form_label_wrapper {
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column-reverse;
   position: relative;
   margin: 0px 0px 40px;
 }
-.newsletter_signup_form_label_wrapper input[type="text"],
+
+/* .newsletter_signup_form_label_wrapper input[type="text"],
 .newsletter_signup_form_label_wrapper input[type="email"],
-.newsletter_signup_form_label_wrapper input[type="tel"],
-.newsletter_signup_form_label_wrapper input[type="number"] {
+.newsletter_signup_form_label_wrapper input[type="tel"], */
+.newsletter_signup_form_label_wrapper input {
   border-top: none;
   border-left: none;
   border-right: none;
   padding: 10px;
- 
+  outline: none;
   font-size: 20px;
-  /* border-color: #3699fb; */
-  border-color: #8fb3d8;
+  border-bottom: 2px solid #B7D7F7;
   width: 550px;
 }
-.newsletter_signup_form_label_wrapper input[type="text"]:focus,
-.newsletter_signup_form_label_wrapper input[type="email"],
-.newsletter_signup_form_label_wrapper input[type="tel"],
-.newsletter_signup_form_label_wrapper input[type="number"]:focus {
-  outline: none;
-  /* border-bottom: 2px solid #bbcac6; */
-}
+
 .textareas textarea {
   /* margin-top: 40px;
   font-size: 18pt;
@@ -147,22 +162,26 @@
   width: 600px; */
   border-color: #3699fb;
 }
+
 .textareas textarea:hover {
   border-color: #3699fb;
   font-family: "Sora", sans-serif;
 }
+
 .submit_btn {
   padding: 12px 50px 12px 50px;
   background-color: #3699FB;
-  color:white;
+  color: white;
   border-radius: 5px;
   border: none;
   font-size: 18px;
   outline: none;
   cursor: pointer;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-weight: 300;
   font-family: "Sora", sans-serif;
 }
+
 /* footer */
 .footerbody {
   position: absolute;
@@ -185,10 +204,12 @@
   flex-wrap: wrap;
   /* width: 61%; */
 }
+
 .btn_second {
   width: 100%;
   text-align: center;
 }
+
 .btn_second button {
   margin-top: 10px;
   padding: 13px 25px 13px 25px;
@@ -200,42 +221,47 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 .water_problem_content {
   width: 100%;
-  padding: 80px 70px 80px 75px;
-  background: radial-gradient(50% 40.36% at 100% 35.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%) 
+  padding: 80px 70px;
+  background: radial-gradient(50% 40.36% at 100% 35.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%)
 }
+
 .first_statment {
-  font-size: 70px;
+  /* font-size: 70px; */
   color: #a9a9a9;
   font-family: "Sora", sans-serif;
   padding: 0px;
 }
+
 .bottomLine {
-  border: linear-gradient(
-    118.65deg,
-    #3699fb 6.89%,
-    rgba(255, 172, 242, 0) 107.01%
-  );
+  border: linear-gradient(118.65deg,
+      #3699fb 6.89%,
+      rgba(255, 172, 242, 0) 107.01%);
   /* height: 16%;
   width: 48%; */
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  */
 }
+
 .water_problem_content strong {
   color: #3699fb;
 }
+
 .second_statement {
   font-size: 30px;
+  font-weight: 400;
   color: #a9a9a9;
   font-family: "Sora", sans-serif;
   margin-bottom: 40px;
-  margin-top: -100px;
+  /* margin-top: 0; */
+  margin-top: -20px;
 }
+
 .btn_third {
   margin-top: 10px;
   padding: 13px 25px 13px 25px;
   font-size: 18px;
-  /* background-color: #3699fb; */
   border: 2px solid #3699fb;
   outline: none;
   color: #3699fb;
@@ -243,19 +269,32 @@
   cursor: pointer;
   background: transparent;
 }
+
 .early_brackers {
   width: 80%;
-  padding: 80px 70px 80px 75px;
+  padding: 80px 70px 80px 100px;
 }
+
 .early_brackers h1 {
   font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 50px;
 }
-.brackers_logos{
+
+.brackers_logos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0px 10px;
+  flex-wrap: wrap;
+  width: 60%;
 }
+
+.brackers_logos img {
+  height: 100px;
+}
+
 /* .brackers_logos {
   width: 50%;
   display: flex;
@@ -265,26 +304,15 @@
   height: 100px;
 } */
 
-@media (max-width: 768px) {
-  .content6 {
-    display: table;
-    justify-content: center;
-  }
-  .content6 img {
-    align-items: center;
-    width: auto;
-    height: 150px;
-  }
-  .first_bg_img,
-  .second_bg_img {
-    height: 40vh;
-  }
-}
+
+
 @media (max-width: 1400px) {
+
   .first_bg_img,
   .second_bg_img {
     height: 40vh;
   }
+
   .first_bg_img h5 {
     font-size: 35px;
   }
@@ -296,39 +324,72 @@
 }
 
 @media (max-width: 1395px) {
-  .newsletter_signup_form_label_wrapper input[type="text"],
-  .newsletter_signup_form_label_wrapper input[type="email"],
-  .newsletter_signup_form_label_wrapper input[type="number"] {
+
+  /* .newsletter_signup_form_label_wrapper input[type="text"],
+  .newsletter_signup_form_label_wrapper input[type="email"], */
+  .newsletter_signup_form_label_wrapper input {
     width: 500px;
   }
+
   .textareas textarea {
     width: 500px;
     /* width: auto; */
   }
 }
+
 @media (max-width: 1290px) {
-  .newsletter_signup_form_label_wrapper input[type="text"],
-  .newsletter_signup_form_label_wrapper input[type="email"],
-  .newsletter_signup_form_label_wrapper input[type="number"] {
+
+  /* .newsletter_signup_form_label_wrapper input[type="text"],
+  .newsletter_signup_form_label_wrapper input[type="email"], */
+  .newsletter_signup_form_label_wrapper input {
     width: 400px;
   }
+
   .textareas textarea {
     width: 400px;
   }
 }
+
 @media (max-width: 1280px) {
+  .btn_third{
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+  .early_brackers{
+    width: 100%;
+  }
+  .brackers_logos{
+    width: 100%;
+  }
   .formsAndtextarea {
     display: block;
   }
-  .newsletter_signup_form_label_wrapper input[type="text"],
+  .second_statement{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  /* .newsletter_signup_form_label_wrapper input[type="text"],
   .newsletter_signup_form_label_wrapper input[type="email"],
-  .newsletter_signup_form_label_wrapper input[type="number"] {
+  .newsletter_signup_form_label_wrapper input[type="tel"], */
+  .newsletter_signup_form_label_wrapper input {
     width: auto;
   }
+
   .textareas textarea {
     min-width: 500px;
     width: 100%;
   }
+}
+@media screen and (max-width: 930px) {
+
+  .homethree_heading_h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+  }
+  /* .homethree_heading_h1 h1{
+    font-size: 30px;
+  } */
 }
 @media screen and (min-width: 760px) and (max-width: 930px) {
   .bottomLine {
@@ -336,13 +397,129 @@
     height: 3%;
     padding-bottom: 2.5px;
   }
+
+
+}
+@media screen and (max-width: 900px) {
+  .form_area > h1{
+    font-size: 40px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  
+  .water_problem_content{
+    text-align: center;
+    width: 100%;
+    padding: 26px 5%;
+  }
+  .second_statement{
+    font-family: 'sora';
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .btn_third{
+    font-size: 12px;
+    padding: 13px 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .homethree_heading_h1{
+    padding: 0;
+    text-align: center;
+  }
+  .homethree_heading_h1 h1{
+    font-size: 30px;
+
+    font-weight: 400;
+  }
+
+
+  .early_brackers {
+    margin: 0;
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .early_brackers h1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .brackers_logos {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .brackers_logos img {
+    height: 10vw;
+    margin: 5px;
+  }
+
+  .form_area {
+    padding: 5%;
+  }
+
+  .form_area h1 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .form_area label {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .newsletter_signup_form_label_wrapper{
+    margin-bottom: 20px;
+  }
+  .newsletter_signup_form_label_wrapper input {
+    font-size: 14px;
+    padding: 10px 2px;
+  }
+  .form_area button{
+    font-size: 14px;
+  }
+  .content6 {
+    display: table;
+    justify-content: center;
+  }
+
+  .content6 img {
+    align-items: center;
+    width: auto;
+    height: 150px;
+  }
+
+  .first_bg_img,
+  .second_bg_img {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homethree_heading_h1 h1{
+    font-size: 24px;
+    font-weight: 400;
+  }
 }
 @media screen and (min-width: 260px) and (max-width: 430px) {
   .bottomLine {
     width: 110% !important;
     padding-bottom: 2.5px;
   }
+  .form_area {
+    padding-bottom: 40px;
+  }
 }
+
 @media screen and (min-width: 430px) and (max-width: 750px) {
   .bottomLine {
     width: 100% !important;

@@ -6,17 +6,19 @@ import Footer from "../Footer/Footer";
 const Home1 = ({setPopUpOn}) => {
 
   function scheduleDemoClickHanlder (){
-    setPopUpOn(true)
+    setPopUpOn(true);
   }
+
+  
 
   return (
     <>
       <div>
         <div className={styles.headsection}>
           <div className={styles.header_logo}>
-            <h3>
+            <figure>
               <img src="/Frame1.png" style={{ marginTop: "3px" }} />
-            </h3>
+            </figure>
 
             <h3 className={styles.header_log_title}>AIVARA</h3>
           </div>
@@ -35,12 +37,12 @@ const Home1 = ({setPopUpOn}) => {
           </div>
         </div>
         <div className={styles.visionAndMission}>
-          <div className={styles.heading_content2}>
+          <div className={`${styles.heading_content2} ${styles.heading_content}`}>
             <img src="/Rectangle.svg" />
             <p>We are supported by Ministry of Science and Technoloy </p>
           </div>
           <div className={styles.body_container2}>
-            <div className={styles.heading_content3}>
+            <div className={`${styles.heading_content3} ${styles.heading_content}`}>
               <h1>Our mission</h1>
               <p>
                 To protect the environment and develop
@@ -50,7 +52,7 @@ const Home1 = ({setPopUpOn}) => {
                 and industry problems
               </p>
             </div>
-            <div className={styles.heading_content4}>
+            <div className={`${styles.heading_content4} ${styles.heading_content}`}>
               <div>
                 <h1>Our vision</h1>
                 <p>

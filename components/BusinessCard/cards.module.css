@@ -13,7 +13,7 @@
   width: 220px;
   background-color: #fff;
   border-radius: 10px;
-  @include longshadow(rgba(67, 74, 84, 0.02), rgba(240, 242, 245, 0), 40); 
+  /* @include longshadow(rgba(67, 74, 84, 0.02), rgba(240, 242, 245, 0), 40); */
   display: flex;
   flex-direction: column;
   margin: 25px;
@@ -32,6 +32,23 @@
 }
 .colours img {
   padding: 20px;
- opacity:0.5;
+  opacity:0.5;
+  height: 100%;
+}
 
+@media screen and (max-width: 600px){
+  .palettes{
+    margin: 0;
+    width: 100%;
+  }
+  .details p{
+    font-size: 14px;
+    font-weight: 400;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+  }
+  .colours{
+    height: 100px;
+  }
 }
