@@ -1,6 +1,6 @@
 import classes from "./footer.module.css";
 import Cards from "../BusinessCard/Cards";
-const Footer = ({setPopUpOn}) => {
+const Footer = ({ setPopUpOn }) => {
 
   function scheduleDemoClickHanlder() {
     setPopUpOn(true);
@@ -143,23 +143,25 @@ const Footer = ({setPopUpOn}) => {
           </div>
 
           <div className={classes.section2}>
-            <div>
+
+            <div className={classes.foundersInfoContainer}>
               <h1>Founded by</h1>
+              <div className={classes.imageSection}>
+                <div className={classes.singleImage}>
+                  <img src="/shalmali.png" alt="pic" />
+                  {/* <h4>Shalmali, CEO</h4>
+                <p>(Honeywell, Project Manager)</p> */}
+                </div>
+
+                <div className={classes.singleImage}>
+                  <img src="/urvashi.png" alt="pic" />
+                  {/* <h4>Urvashi, CTO</h4>
+                <p>(Johnson Controls, System Engineer)</p> */}
+                </div>
+              </div>
+              <p>Shalmali, CEO (Honeywell, Project Manager) &amp; <br /> Urvashi, CTO (Johnson Controls, System Engineer)</p>
             </div>
 
-            <div className={classes.imageSection}>
-              <div className={classes.singleImage}>
-                <img src="/CEO.png" alt="pic" />
-                <h4>Shalmali, CEO</h4>
-                <p>(Honeywell, Project Manager)</p>
-              </div>
-
-              <div className={classes.singleImage}>
-                <img src="/CTO.png" alt="pic" />
-                <h4>Urvashi, CTO</h4>
-                <p>(Johnson Controls, System Engineer)</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
