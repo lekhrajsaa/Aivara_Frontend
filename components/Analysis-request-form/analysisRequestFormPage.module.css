@@ -61,17 +61,23 @@
 @media (max-width: 650px) {
     .analysisReqestForm_Page{
         flex-direction: column;
+        padding: 0px;
     }
     .analysisRequestDetails {
-    width: 100%;
-}
+    width: 150%;
+    }
 .analysisRequestForm{
     justify-content: center;
     align-items: center;
     align-content: center;
    margin: 50px auto;
+   padding: 20px;
+}
+.analysis_Details p,.analysisRequestForm p,.analysisRequestDetails p{
+
+    font-size: 18px;
 }
 .analysisRequestForm p{
-    font-size: 18;
+    font-size: 14;
 }
 }
