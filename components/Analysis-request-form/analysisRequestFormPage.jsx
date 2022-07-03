@@ -1,19 +1,20 @@
 import React from 'react'
 import AnalysisRequestForm from './analysisRequestForm';
-import classes from "./analysisRequestFormPage.module.css"
-import {BsArrowLeft} from "react-icons/bs"
+import classes from "./analysisRequestFormPage.module.css";
+import {BsArrowLeft} from "react-icons/bs";
+
 const analysisRequestFormPage = ({setPopUpOn}) => {
   function backButtonClickHandler(){
     setPopUpOn(false);
   }
 
   return (
-    <div className={classes.analysisReqestForm_Page}>
+    <div className={classes.analysisRequestForm_Page}>
       <button onClick={backButtonClickHandler} className={classes.backButton}><BsArrowLeft /></button>
       <div className={classes.analysisRequestDetails}>
         <p>Want to know if Aivara can help you?</p>
         <div className={classes.analysis_Details}>
-          <p style={{ fontSize: "30px", marginTop: "0px", fontWeight: "500" }}>
+          <p>
             Submit an image sample to see how Aivara can simplify your work
           </p>
           <p>

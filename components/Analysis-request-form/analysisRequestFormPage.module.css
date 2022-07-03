@@ -1,15 +1,24 @@
-.analysisReqestForm_Page {
+.analysisRequestForm_Page {
     display: flex;
     flex-direction: row;
     /* width: 100%; */
     /* height:auto; */
     /* margin: 100px 0px; */
-    padding: 84px 0;
+    justify-content: center;
+    padding: 84px;
+    flex-wrap: wrap;
     background: radial-gradient(31.42% 69.88% at 9.1% 18.95%, rgba(54, 153, 251, 0.2) 0%, rgba(249, 249, 249, 0.2) 100%), #F9F9F9;
 }
-
+.analysis_Details{
+    margin-top: 40px;
+}
+.analysisRequestForm{
+    width: 30%;
+    min-width: 400px;
+}
 .analysisRequestDetails {
-    width: 70%;
+    width: 60%;
+    margin-top: 20px;
 }
 
 .analysisRequestDetails p {
@@ -19,6 +28,7 @@
     font-size: 30px;
     line-height: 38px;
     padding: 0px 90px;
+    padding-left: 0;
 }
 
 
@@ -32,14 +42,12 @@
 }
 
 .analysisRequestForm p {
-    display: flex;
-    flex-direction: column;
+
     font-family: 'Sora';
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
     line-height: 38px;
-    margin-top: 0;
 }
 
 .backButton{
@@ -53,7 +61,74 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backButton > svg{
+    width: 80%;
+    height: 80%;
 }
 .backButton:hover{
     background-color: rgba(255,255,255, 0.4);
+}
+
+@media screen and (max-width: 1400px) {
+    .analysis_Details p {
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .analysisRequestDetails {
+        width: 100%;
+    }
+    .analysisRequestDetails p{
+        padding: 0;
+    }
+    .analysisRequestForm{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .backButton{
+        left: 3%;
+        top: 2%;
+        width: 40px;
+        height: 40px;
+    }
+    .analysisRequestDetails p{
+        margin-top: 50px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .analysisRequestForm_Page{
+        padding: 6%;
+    }
+    .analysisRequestForm{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .backButton {
+        width: 30px;
+        height: 30px;
+    }
+    .analysisRequestDetails p{
+        font-size: 14px;
+        margin: 20px 0;
+        line-height: 20px;
+
+    }
+    .analysisRequestForm{
+        min-width: unset;
+    }
+    .analysisRequestForm > p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: unset;
+    }
 }
