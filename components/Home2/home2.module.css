@@ -469,7 +469,7 @@
 
   .form_area h1 {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 24px;
   }
 
@@ -503,27 +503,17 @@
     height: 40vh;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .homethree_heading_h1 h1{
-    font-size: 24px;
-    font-weight: 400;
-  }
-}
-@media screen and (min-width: 260px) and (max-width: 430px) {
-  .bottomLine {
-    width: 110% !important;
-    padding-bottom: 2.5px;
-  }
+@media screen and (max-width: 430px) {
   .form_area {
     padding-bottom: 40px;
   }
+
 }
 
-@media screen and (min-width: 430px) and (max-width: 750px) {
+/* @media screen and (min-width: 430px) and (max-width: 750px) {
   .bottomLine {
     width: 100% !important;
     height: 6%;
     padding-bottom: 2.5px;
   }
-}
+} */

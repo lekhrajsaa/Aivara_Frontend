@@ -227,7 +227,7 @@
     top: 0px;
     text-align: left;
     margin: 0;
-
+    color: #aaa;
   }
   .section1{
     width: 90%;
@@ -285,6 +285,12 @@
   /* .singleImage > img {
     width: 80px;
   } */
+  .footer_body{
+    height: 600px;
+  }
+  .singleImage{
+    height: 160px;
+  }
   .section2 > div > h1{
     font-size: 14px;   
   }
