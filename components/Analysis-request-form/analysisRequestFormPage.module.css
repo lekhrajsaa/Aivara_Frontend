@@ -57,27 +57,3 @@
 .backButton:hover{
     background-color: rgba(255,255,255, 0.4);
 }
-
-@media (max-width: 650px) {
-    .analysisReqestForm_Page{
-        flex-direction: column;
-        padding: 0px;
-    }
-    .analysisRequestDetails {
-    width: 150%;
-    }
-.analysisRequestForm{
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-   margin: 50px auto;
-   padding: 20px;
-}
-.analysis_Details p,.analysisRequestForm p,.analysisRequestDetails p{
-
-    font-size: 18px;
-}
-.analysisRequestForm p{
-    font-size: 14;
-}
-}
