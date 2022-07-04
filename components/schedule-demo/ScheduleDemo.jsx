@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './scheduleDemo.module.css' 
-const ScheduleDemo = ({ setPopUpOn }) => {
+const ScheduleDemo = ({ setOpenShduleDemoForm }) => {
 
   function scheduleDemoClickHanlder(){
-    setPopUpOn(true);
+    setOpenShduleDemoForm(true);
   }
   
   return (

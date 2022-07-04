@@ -210,9 +210,20 @@ const AnalysisRequestForm = () => {
         onDrop={dragDropHandler}
         onDragOver={dragOverHandler}
         onDragLeave={dragLeaveHandler}
-        style={dragDropInputStyles}
+        style={{ ...dragDropInputStyles, position: 'relative' }}
+
       >
         {dragDropInputText}
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="material-symbols-outlined"
+          style={{
+            position: 'absolute',
+            top: '50%',
+            transform: 'translate(0, -50%) rotate(40deg)',
+            margin: 'auto'
+          }}>
+          attach_file
+        </span>
         <input
           className={classes.file_upload_input}
           type="file"
@@ -233,6 +244,7 @@ const AnalysisRequestForm = () => {
         required
         onInput={analysisGoalChangeHanlder}
       />
+
       <button type="submit">Submit</button>
     </form>
   );

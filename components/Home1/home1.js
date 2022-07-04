@@ -3,10 +3,10 @@ import styles from "./home1.module.css";
 import classes from "./homeTitle.module.css";
 import Home2 from "../Home2/home2";
 import Footer from "../Footer/Footer";
-const Home1 = ({setPopUpOn}) => {
+const Home1 = ({setOpenShduleDemoForm}) => {
 
   function scheduleDemoClickHanlder (){
-    setPopUpOn(true);
+    setOpenShduleDemoForm(true);
   }
 
   

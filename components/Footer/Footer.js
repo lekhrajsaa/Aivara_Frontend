@@ -1,9 +1,9 @@
 import classes from "./footer.module.css";
 import Cards from "../BusinessCard/Cards";
-const Footer = ({ setPopUpOn }) => {
+const Footer = ({ setOpenShduleDemoForm }) => {
 
   function scheduleDemoClickHanlder() {
-    setPopUpOn(true);
+    setOpenShduleDemoForm(true);
   }
 
   return (
@@ -28,6 +28,7 @@ const Footer = ({ setPopUpOn }) => {
                 style={{
                   color: "rgba(178, 204, 253, 1)",
                   textDecoration: "underline",
+
                 }}
                 onClick={scheduleDemoClickHanlder}
               >
