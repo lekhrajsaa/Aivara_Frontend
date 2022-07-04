@@ -215,7 +215,7 @@ const AnalysisRequestForm = () => {
       >
         {dragDropInputText}
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="material-symbols-outlined"
+        <span className="material-symbols-outlined"
           style={{
             position: 'absolute',
             top: '50%',
