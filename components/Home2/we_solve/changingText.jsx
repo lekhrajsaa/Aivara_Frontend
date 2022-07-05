@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Line from '../line_component/line';
+import Line from '../../UI/line_component/line';
 import classes from './changingText.module.css';
 import ChangingWord from './changingWord';
 
