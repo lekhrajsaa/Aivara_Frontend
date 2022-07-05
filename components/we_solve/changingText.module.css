@@ -11,8 +11,8 @@
     text-align: left;
     color: #A9A9A9;
     line-height: 85px;
-    /* width: 884px; */
-    width: 70%;
+    width: 884px;
+    /* width: 70%; */
     font-weight: 400;
 }
 .ChangingPara > span{
@@ -30,11 +30,24 @@
         font-size: 30px;
         line-height: 45px;
         margin: 0;
-        width: 75%;
+        width: 550px;
         font-weight: 400;
     }
     .ChangingPara > span{
         height: 40px;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .ChangingPara{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .ChangingPara > span{
+        height: 30px;
+    }
+    .ChangingPara > span > span{
+        height: 2px;
     }
 
 }

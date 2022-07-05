@@ -52,19 +52,15 @@
   background-position: center center;
 }
 
-.homethree_heading {
-  /* text-align: center; */
 
-  width: 100%;
-}
 
 /* .homethree_heading h1 {
   font-size: 50px;
   justify-content: first baseline;
 } */
-.homethree_heading_h1 {
+/* .homethree_heading_h1 {
   padding: 70px;
-}
+} */
 
 .homethree_heading_h1 h1 {
   color: #979797;
@@ -78,12 +74,22 @@
 }
 
 .homethree_heading {
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  padding: 100px;
+  padding-bottom: 0;
 }
 
-.business_cards {
+.business_card {
   width: 100%;
-  justify-content: center;
+  padding: 40px 0;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cards_colours {
+  height: 120px;
 }
 
 .box9 {
@@ -194,16 +200,6 @@
   width: 100%;
 }
 
-.business_card {
-  padding: 20px;
-  display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; */
-  justify-content: space-around;
-  flex-wrap: wrap;
-  /* width: 61%; */
-}
 
 .btn_second {
   width: 100%;
@@ -224,7 +220,7 @@
 
 .water_problem_content {
   width: 100%;
-  padding: 80px 70px;
+  padding: 80px 100px;
   background: radial-gradient(50% 40.36% at 100% 35.68%, #FFDEFA 20%, rgba(255, 255, 255, 0) 100%)
 }
 
@@ -256,6 +252,7 @@
   margin-bottom: 40px;
   /* margin-top: 0; */
   margin-top: -20px;
+
 }
 
 .btn_third {
@@ -351,26 +348,29 @@
 }
 
 @media (max-width: 1280px) {
-  .btn_third{
+  .btn_third {
     padding: 10px 16px;
     font-size: 16px;
   }
-  .early_brackers{
+
+  .early_brackers {
     width: 100%;
   }
-  .brackers_logos{
+
+  .brackers_logos {
     width: 100%;
   }
-  .formsAndtextarea {
+
+  /* .formsAndtextarea {
     display: block;
-  }
-  .second_statement{
+  } */
+
+  .second_statement {
     font-size: 20px;
     margin-top: 10px;
+    text-align: left;
   }
-  /* .newsletter_signup_form_label_wrapper input[type="text"],
-  .newsletter_signup_form_label_wrapper input[type="email"],
-  .newsletter_signup_form_label_wrapper input[type="tel"], */
+
   .newsletter_signup_form_label_wrapper input {
     width: auto;
   }
@@ -379,62 +379,95 @@
     min-width: 500px;
     width: 100%;
   }
+  .form_wrapper{
+    width: 46%;
+  }
+  .textareas{
+    width: 46%;
+  }
+  .form_area h1{
+    font-size: 32px;
+  }
+  .formsAndtextarea input{
+    font-size: 16px;
+    padding: 5px;
+  }
+  .formsAndtextarea label{
+    font-size: 18px;
+    margin-top: 10px;
+  }
 }
-@media screen and (max-width: 930px) {
 
-  .homethree_heading_h1{
-    font-size: 30px;
+@media screen and (max-width: 930px) {
+  .homethree_heading{
+    padding: 10%;
+  }
+  .homethree_heading_h1 {
     text-align: center;
     padding: 0;
   }
-  /* .homethree_heading_h1 h1{
+
+  .homethree_heading_h1 h1 {
     font-size: 30px;
-  } */
+  }
+  .second_statement {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+  }
 }
-@media screen and (min-width: 760px) and (max-width: 930px) {
+
+/* @media screen and (min-width: 760px) and (max-width: 930px) {
   .bottomLine {
     width: 130% !important;
     height: 3%;
     padding-bottom: 2.5px;
   }
-
-
-}
-@media screen and (max-width: 900px) {
-  .form_area > h1{
-    font-size: 40px;
+  .water_problem_content {
+    text-align: center;
+    width: 100%;
+    padding: 26px 8%;
   }
 
 }
 
+@media screen and (max-width: 900px) {
+  .form_area>h1 {
+    font-size: 40px;
+  }
+
+} */
+
 
 @media (max-width: 768px) {
-  
-  .water_problem_content{
+
+  .water_problem_content {
     text-align: center;
     width: 100%;
     padding: 26px 5%;
   }
-  .second_statement{
+
+  .second_statement {
     font-family: 'sora';
     font-size: 10px;
     text-align: center;
     margin-bottom: 20px;
   }
-  .btn_third{
+
+  .btn_third {
     font-size: 12px;
     padding: 13px 25px;
     text-align: center;
     margin: 0 auto;
   }
 
-  .homethree_heading_h1{
+  .homethree_heading_h1 {
     padding: 0;
     text-align: center;
   }
-  .homethree_heading_h1 h1{
-    font-size: 30px;
 
+  .homethree_heading_h1 h1 {
+    font-size: 24px;
     font-weight: 400;
   }
 
@@ -477,15 +510,28 @@
     font-weight: 400;
     font-size: 14px;
   }
-  .newsletter_signup_form_label_wrapper{
+
+  .newsletter_signup_form_label_wrapper {
     margin-bottom: 20px;
   }
+
   .newsletter_signup_form_label_wrapper input {
     font-size: 14px;
     padding: 10px 2px;
   }
-  .form_area button{
+
+  .form_area button {
     font-size: 14px;
+  }
+
+  .formsAndtextarea{
+    display: block;
+  }
+  .form_wrapper{
+    width: 100%;
+  }
+  .textareas{
+    width: 100%;
   }
   .content6 {
     display: table;
@@ -503,9 +549,20 @@
     height: 40vh;
   }
 }
+
 @media screen and (max-width: 430px) {
   .form_area {
     padding-bottom: 40px;
+  }
+  .business_card{
+    padding-top: 0;
+  }
+  /* .homethree_heading{
+    padding: 10% 0;
+  } */
+  .homethree_heading_h1 h1 {
+    font-size: 16px;
+    font-weight: 400;
   }
 
 }

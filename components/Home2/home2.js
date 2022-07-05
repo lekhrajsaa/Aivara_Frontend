@@ -37,10 +37,10 @@ const carddata = [
   },
 ];
 
-const Home2 = ({setPopUpOn}) => {
+const Home2 = ({setOpenShduleDemoForm}) => {
 
   function scheduleDemoBtnClickHanlder(){
-    setPopUpOn(true)
+    setOpenShduleDemoForm(true)
   }
 
   return (

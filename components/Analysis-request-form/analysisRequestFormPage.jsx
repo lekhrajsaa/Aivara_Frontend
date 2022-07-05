@@ -3,9 +3,9 @@ import AnalysisRequestForm from './analysisRequestForm';
 import classes from "./analysisRequestFormPage.module.css";
 import {BsArrowLeft} from "react-icons/bs";
 
-const analysisRequestFormPage = ({setPopUpOn}) => {
+const analysisRequestFormPage = ({setOpenShduleDemoForm}) => {
   function backButtonClickHandler(){
-    setPopUpOn(false);
+    setOpenShduleDemoForm(false);
   }
 
   return (

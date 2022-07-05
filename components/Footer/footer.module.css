@@ -47,6 +47,7 @@
 
 .fuctionality > div{
   margin: 10px 0;  
+  cursor: pointer;
 }
 
 .social{
@@ -135,7 +136,7 @@
     width: 100%;
   }
   .info{
-    font-size: 30px;
+    font-size: 26px;
   }
   .fuctionality{
     bottom: 124px;

@@ -17,15 +17,17 @@ import ChangingWord from "../components/we_solve/changingWord";
 import AnalysisRequestFormPage from "../components/Analysis-request-form/analysisRequestFormPage";
 
 export default function Home() {
-  const [popUpOn, setPopUpOn] = useState(false);
+  const [openShduleDemoForm, setOpenShduleDemoForm] = useState(false);
 
   return (
     <>
     <Head>
       <title>Aivara</title>
       <link rel="icon" href="./favicon.ico" />
+      <link rel="icon" href="./favicon.ico" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </Head>
-    {!popUpOn && <>
+    {!openShduleDemoForm && <>
         <div
           className={styles.container}
           style={{
@@ -34,15 +36,15 @@ export default function Home() {
             zIndex: "-2",
           }}
         >
-          <Home1 setPopUpOn={setPopUpOn} />
+          <Home1 setOpenShduleDemoForm={setOpenShduleDemoForm} />
         </div>
         <AnalysisSteps />
-        <ScheduleDemo setPopUpOn={setPopUpOn} />
-        <Home2 setPopUpOn={setPopUpOn} />
+        <ScheduleDemo setOpenShduleDemoForm={setOpenShduleDemoForm} />
+        <Home2 setOpenShduleDemoForm={setOpenShduleDemoForm} />
         
-        <Footer />
+        <Footer setOpenShduleDemoForm={setOpenShduleDemoForm} />
       </>}
-      { popUpOn && <AnalysisRequestFormPage setPopUpOn={setPopUpOn} />}
+      { openShduleDemoForm && <AnalysisRequestFormPage setOpenShduleDemoForm={setOpenShduleDemoForm} />}
     </>
   );
 }
