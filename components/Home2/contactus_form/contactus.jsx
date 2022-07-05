@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './../home2.module.css'
+import classes from '../home2.module.css'
 
 const Contactus = () => {
 
@@ -16,8 +16,8 @@ const Contactus = () => {
         // console.log(contactNumber)
         // console.log(message)
 
-        // console.log(process.env.NEXT_PUBLIC_X_API_KEY)
-        // console.log(process.env)
+        console.log(process.env.NEXT_PUBLIC_X_API_KEY)
+        console.log(process.env)
 
         const body = {
             query: `
@@ -36,19 +36,14 @@ const Contactus = () => {
             method: "POST",
             headers: {
                 "x-api-key": `${process.env.NEXT_PUBLIC_X_API_KEY}`,
+                
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(body),
         }).then(res => res.json())
-        .then(data => {
-            console.log('response: ', data)
-            if(data.status == 200){
-                alert('Form Submitted Succesfully!')
-            }
-        })
+        .then(data => console.log('response: ', data))
         .catch(err => console.log(err))
-        
-        e.target.reset()
+
     }
 
     return (
@@ -66,7 +61,7 @@ const Contactus = () => {
                             required
                         />
                         <label
-                            className={`${classes.newsletter_signup_form_label} ${classes.form_label}`}
+                            className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
                             htmlFor="company_name"
                             id="company_name"
                         >
@@ -82,7 +77,7 @@ const Contactus = () => {
                             required
                         />
                         <label
-                            className={`${classes.newsletter_signup_form_label} ${classes.form_label}`}
+                            className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
                             htmlFor="company_email"
                             id="company_email"
 
@@ -99,7 +94,7 @@ const Contactus = () => {
                             required
                         />
                         <label
-                            className={`${classes.newsletter_signup_form_label} ${classes.form_label}`}
+                            className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
                             htmlFor="contact_number"
                             id="contact_number"
                         >
@@ -124,16 +119,17 @@ const Contactus = () => {
                             required
                         />
                         <label
-                            className={`${classes.newsletter_signup_form_label} ${classes.form_label}`}
+                            className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
                             htmlFor="message"
                             id="message"
+                            style={{ color: "#395D89",fontSize:" 20px"}}
                         >
                             Message
                         </label>
                     </div>
                 </div>
             </div>
-            <button className={classes.submit_btn} >
+            <button className={classes.submit_btn} type="submit">
                 Submit
             </button>
         </form>

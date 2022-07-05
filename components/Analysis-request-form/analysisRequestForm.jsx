@@ -217,8 +217,8 @@ const AnalysisRequestForm = () => {
           className={classes.file_upload_input}
           type="file"
           id="attachments"
-          accept="image/jpeg,image/gif,image/png,application/pdf,application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain,image/x-eps"
-          name='AttachmentsInput'
+          accept="image/jpeg,image/gif,image/png,application/pdf,application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain,image/x-eps,application/zip,application/rar,application/7zip"
+          name="AttachmentsInput"
           onChange={attachmentInpChangeHanlder}
           required
           multiple
