@@ -2,8 +2,8 @@ import classes from "./home2.module.css";
 // import Home3 from "../Home3/Home3";
 // import img from "../../public/computerimg.png";
 // import Footer from "../Footer/Footer";
-import Cards from "../BusinessCard/Cards";
-import ChangingText from "../we_solve/changingText";
+import Cards from "./BusinessCard/Cards";
+import ChangingText from "./we_solve/changingText";
 import Contactus from "./contactus_form/contactus";
 import Link from "next/link";
 const carddata = [
