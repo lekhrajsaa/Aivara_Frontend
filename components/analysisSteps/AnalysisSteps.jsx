@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import StepsSec from "../Analysis_details_slider2/stepsSec";
+import StepsSec from "./Analysis_details_slider2/stepsSec";
 // import StepsSec from "../Analysis_details_slider/stepsSec";
-import Line from "../line_component/line";
+import Line from "../UI/line_component/line";
 import Image from 'next/image';
 import laptopImg from './laptop-image-with-analysis-report.png';
 import laptopImg1 from '../../public/laptopImage.png';
 import styles from "./analysisSteps.module.css";
-import classes from '../Analysis_details_slider2/step.module.css'
+import classes from './Analysis_details_slider2/step.module.css'
 
 const AnalysisSteps = () => {
 

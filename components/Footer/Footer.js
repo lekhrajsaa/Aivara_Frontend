@@ -1,5 +1,4 @@
 import classes from "./footer.module.css";
-import Cards from "../BusinessCard/Cards";
 const Footer = ({ setOpenShduleDemoForm }) => {
 
   function scheduleDemoClickHanlder() {
