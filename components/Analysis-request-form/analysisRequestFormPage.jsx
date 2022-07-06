@@ -1,7 +1,7 @@
 import React from 'react'
 import AnalysisRequestForm from './analysisRequestForm';
 import classes from "./analysisRequestFormPage.module.css";
-import {BsArrowLeft} from "react-icons/bs";
+import {BsArrowLeft} from "react-icons/bs"
 
 const analysisRequestFormPage = ({setOpenShduleDemoForm}) => {
   function backButtonClickHandler(){
@@ -10,7 +10,7 @@ const analysisRequestFormPage = ({setOpenShduleDemoForm}) => {
 
   return (
     <div className={classes.analysisRequestForm_Page}>
-      <button onClick={backButtonClickHandler} className={classes.backButton}><BsArrowLeft /></button>
+      <button onClick={backButtonClickHandler} className={classes.backButton}><BsArrowLeft/></button>
       <div className={classes.analysisRequestDetails}>
         <p>Want to know if Aivara can help you?</p>
         <div className={classes.analysis_Details}>
