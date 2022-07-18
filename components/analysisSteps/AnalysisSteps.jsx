@@ -62,7 +62,7 @@ const AnalysisSteps = () => {
       }
     }
 
-    stepsMainContainer.current.addEventListener('wheel', wheelEventHandler, { passive: false }, true)
+    // stepsMainContainer.current.addEventListener('wheel', wheelEventHandler, { passive: false }, true)
 
 
     if (window.innerWidth < 1000) {
