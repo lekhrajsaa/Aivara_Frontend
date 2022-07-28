@@ -145,7 +145,7 @@ const Contactus = () => {
                                 className={`${classes.newsletter_signup_form_label} ${classes.from_lable}`}
                                 htmlFor="message"
                                 id="message"
-                                style={{ color: "#395D89", fontSize: " 20px" }}
+                                style={{ color: "#395D89"}}
                             >
                                 Message
                             </label>

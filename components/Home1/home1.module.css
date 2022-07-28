@@ -285,7 +285,7 @@
     font-weight: 300;
   }
   .heading_content4 {
-    justify-content: right;
+    justify-content: flex-end;
   }
   .heading_content4 h1{
     font-size: 16px;
