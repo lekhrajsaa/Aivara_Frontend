@@ -51,6 +51,19 @@
     }
 
 }
+@media screen and (max-width: 800px) {
+    .ChangingPara{
+        text-align: center;
+        margin: auto;
+    }
+    .ChangingPara > span{
+        height: 30px;
+    }
+    .ChangingPara > span > span{
+        height: 2px;
+    }
+
+}
 @media screen and (max-width: 600px) {
     .ChangingPara{
         text-align: center;
