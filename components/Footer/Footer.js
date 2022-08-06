@@ -159,7 +159,7 @@ const Footer = ({ setOpenShduleDemoForm }) => {
                 <p>(Johnson Controls, System Engineer)</p> */}
                 </div>
               </div>
-              <p>Shalmali, CEO (Former Project Manager  at Honeywell) &amp; <br /> Urvashi, CTO (Former System Engineer at Johnson Controls)</p>
+              <p>Shalmali, CEO (Former Project Manager at Honeywell) &amp; <br /> Urvashi, CTO (Former System Engineer at Johnson Controls)</p>
             </div>
 
           </div>

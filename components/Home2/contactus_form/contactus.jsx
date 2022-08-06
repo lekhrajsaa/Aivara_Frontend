@@ -13,6 +13,7 @@ import {
 
 
 const Contactus = () => {
+    //Form for Get in touch with us
     const [openAlertBox, setOpenAlertBox] = useState(false);
     const [openErrorBox, setOpenErrorBox] = useState(false);
 
@@ -25,14 +26,11 @@ const Contactus = () => {
         let contactNumber = e.target.contactNumber.value;
         let message = e.target.message.value;
 
-        // console.log(companyName)
-        // console.log(companyEmail)
-        // console.log(contactNumber)
-        // console.log(message)
+        
 
         console.log(process.env.NEXT_PUBLIC_X_API_KEY)
         console.log(process.env)
-
+        //Api to store userdata to database
         const body = {
             query: `
                 mutation{

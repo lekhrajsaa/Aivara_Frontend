@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 
 const AnalysisRequestForm = () => {
-
+//Form For Schedule demo
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [jobTitle, setjobTitle] = useState('');
@@ -49,6 +49,8 @@ const AnalysisRequestForm = () => {
     Array.from(attachmentFiles).forEach(item => {
       formData.append('uploadImages', item);
     })
+
+    //API call to store sample image with other data (Submit Analysis Request)
 
     try {
       let response = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_API}/serverpostAnalysisRequest`, formData, {
